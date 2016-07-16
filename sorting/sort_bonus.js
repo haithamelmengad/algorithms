@@ -5,7 +5,7 @@ var sortBonus = {};
 // Write a function that takes an array and returns a new array with items
 // sorted in increasing order.
 //
-// Use the Quick Sort algorithm to solve this problem.
+// Use the Radix Sort algorithm to solve this problem.
 //
 // ex. sortBonus.radixSort([]) -> []
 // ex. sortBonus.radixSort([1,2,3]) -> [1,2,3]
