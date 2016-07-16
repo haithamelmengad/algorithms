@@ -1,6 +1,7 @@
 # Sorting Exercises
 
-1. Operations on sorted arrays<br>
-   Files: `sorted_array.html`
-   `sorted_array.js`
-   `sorted_array_tests.js`
+To run tests open: `sorted_array.html`
+
+To implement solutions open: `sorted_array.js`
+
+To see existing tests and add new ones: `sorted_array_tests.js`
