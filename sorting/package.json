@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "watchify *_tests.js -o bundle.js",
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "jasmine": "^2.4.1",
+    "watchify": "^3.7.0"
+  }
+}
