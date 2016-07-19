@@ -1,6 +1,6 @@
 "use strict";
 
-describe("searchSortedMatrix()", function() {
+describe("sparseSearch()", function() {
   it("sparseSearch([], 1) -> -1", function() {
     expect(sparseSearch([], 1) ).toBe(-1);
   });
