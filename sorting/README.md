@@ -15,3 +15,12 @@ To implement solutions open: `sort_bonus.js`
 To see existing tests and add new ones: `sort_bonus.js`
 
 [Radix Sort info](http://www.cs.yale.edu/homes/aspnes/pinewiki/RadixSort.html)
+
+## Tuesday July 19th
+
+To run tests open: `sparse_search.html`
+
+To implement solutions open: `sparse_search.js`
+
+To see existing tests and add new ones: `sparse_search.js`
+

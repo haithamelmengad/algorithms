@@ -4,6 +4,8 @@
 // and an item and finds the item in the array. Skip all items that are
 // `null`.
 //
+// Use O(log n) binary search to find the item!
+//
 // If the item is found return the index of it in the array, if the item
 // is not found return -1.
 //
