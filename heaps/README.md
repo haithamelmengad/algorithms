@@ -2,6 +2,5 @@
 
 ## Topics
 
-## Heaps
-
-
+- [Heaps](heap.html)
+- [Linked Lists](linked_list.html)
