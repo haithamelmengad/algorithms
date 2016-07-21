@@ -26,8 +26,8 @@ To see existing tests and add new ones: `sparse_search_tests.js`
 
 ## Thursday
 
-To run tests open: `sorted_matrix.html`
+To run tests open: `merge_any.html`
 
-To implement solutions open: `sorted_matrix.js`
+To implement solutions open: `merge_any.js`
 
-To see existing tests and add new ones: `sorted_matrix_tests.js`
+To see existing tests and add new ones: `merge_any_tests.js`
