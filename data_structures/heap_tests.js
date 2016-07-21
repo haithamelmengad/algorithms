@@ -9,7 +9,7 @@ describe("heap", function() {
 
     describe("heap.push(), heap.pop()", function() {
       it("heap.pop() -> undef", function() {
-        expect(aHeap.pop()).toBe(undefined);
+        expect(aHeap.pop()).toBeUndefined();
       });
 
       it("heap.push(1); heap.pop() -> 1", function() {
@@ -34,7 +34,7 @@ describe("heap", function() {
         expect(aHeap.pop()).toBe(7);
         expect(aHeap.pop()).toBe(34);
         expect(aHeap.pop()).toBe(92);
-        expect(aHeap.pop()).toBe(undefined);
+        expect(aHeap.pop()).toBeUndefined();
       });
     });
 
@@ -60,7 +60,7 @@ describe("heap", function() {
 
     describe("heap.peek()", function() {
       it("heap.peek() -> undef", function() {
-        expect(aHeap.peek()).toBe(undefined);
+        expect(aHeap.peek()).toBeUndefined();
       });
       it("heap.push(1); heap.peek() -> 1", function() {
         aHeap.push(1);
@@ -74,7 +74,7 @@ describe("heap", function() {
       it("heap.push(1); heap.pop(); heap.peek() -> undef", function() {
         aHeap.push(1);
         aHeap.pop();
-        expect(aHeap.peek()).toBe(undefined);
+        expect(aHeap.peek()).toBeUndefined();
       });
       it("heap.peek() returns items in correct order", function() {
         aHeap.push(34);
@@ -92,11 +92,11 @@ describe("heap", function() {
         aHeap.pop();
         expect(aHeap.peek()).toBe(92);
         aHeap.pop();
-        expect(aHeap.peek()).toBe(undefined);
+        expect(aHeap.peek()).toBeUndefined();
       });
     });
   });
-  
+
   describe("heap with comparator function", function() {
     var aHeap;
     beforeEach(function () {
@@ -104,7 +104,7 @@ describe("heap", function() {
     });
     describe("heap.push(), heap.pop()", function () {
       it("heap.pop() -> undef", function () {
-        expect(aHeap.pop()).toBe(undefined);
+        expect(aHeap.pop()).toBeUndefined();
       });
 
       it("heap.push(1); heap.pop() -> 1", function () {
@@ -129,7 +129,7 @@ describe("heap", function() {
         expect(aHeap.pop()).toBe(7);
         expect(aHeap.pop()).toBe(0);
         expect(aHeap.pop()).toBe(-29);
-        expect(aHeap.pop()).toBe(undefined);
+        expect(aHeap.pop()).toBeUndefined();
       });
     });
 
@@ -155,7 +155,7 @@ describe("heap", function() {
 
     describe("heap.peek()", function () {
       it("heap.peek() -> undef", function () {
-        expect(aHeap.peek()).toBe(undefined);
+        expect(aHeap.peek()).toBeUndefined();
       });
       it("heap.push(1); heap.peek() -> 1", function () {
         aHeap.push(1);
@@ -169,7 +169,7 @@ describe("heap", function() {
       it("heap.push(1); heap.pop(); heap.peek() -> undef", function () {
         aHeap.push(1);
         aHeap.pop();
-        expect(aHeap.peek()).toBe(undefined);
+        expect(aHeap.peek()).toBeUndefined();
       });
       it("heap.peek() returns items in correct order", function () {
         aHeap.push(34);
@@ -187,9 +187,8 @@ describe("heap", function() {
         aHeap.pop();
         expect(aHeap.peek()).toBe(-29);
         aHeap.pop();
-        expect(aHeap.peek()).toBe(undefined);
+        expect(aHeap.peek()).toBeUndefined();
       });
     });
   });
 });
-
