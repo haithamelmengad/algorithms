@@ -1,4 +1,4 @@
-# Interview prep: heaps and other data structures
+# Interview prep: trees, heaps and other data structures
 
 ## Topics
 
