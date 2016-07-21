@@ -22,7 +22,7 @@ describe("mergeArraysJumbo()", function() {
   }
 
   var numbers = randoms(100);
-  numbers.sort();
+  numbers.sort((a, b) => (a - b));
   var arrs = _.range(4).map(() => []);
   numbers.forEach((n, i) => {
     arrs[i % 4].push(n);
