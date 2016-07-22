@@ -9,7 +9,7 @@
 // and a "max heap", in which A is always less than, or greater than, B
 // (respectively).
 
-// Fill in the following functions, implementing a heap as a tree.
+// Fill in the following functions, implementing a heap using an array.
 
 // Constructor: instantiate a heap, passing in an optional comparator function.
 // If no comparator function is provided, it should default to less than
