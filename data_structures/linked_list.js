@@ -12,34 +12,33 @@
 
 // Fill in the reverse() method, below.
 
+var Node = function (value) {
+  this.value = value;
+  this.next = null;
+};
+
 var list = function () {
-  var self = this, first = null, last = null;
+  this.first = null;
+  this.last = null;
+};
 
-  // Implement a reverse method. It should return a new, reversed linked list.
-  self.reverse = function () {
+// Implement a reverse method. It should return a new, reversed linked list.
+list.prototype.reverse = function () {
+  // YOUR CODE HERE
+};
 
-  };
-
-  self.insert = function (value) {
-    var node = new Node(value);
-    if (first == null) {
-      first = last = node;
-    } else {
-      var head = first;
-      while (head.next != null) {
-        head = head.next;
-      }
-      head.next = node;
-      last = head.next;
+list.prototype.insert = function (value) {
+  var node = new Node(value);
+  if (this.first == null) {
+    this.first = this.last = node;
+  } else {
+    var head = this.first;
+    while (head.next != null) {
+      head = head.next;
     }
-  };
-
-  var Node = function (value) {
-    this.value = value;
-    this.next = null;
-  };
-
-  return self;
+    head.next = node;
+    this.last = head.next;
+  }
 };
 
 window.list = list;
