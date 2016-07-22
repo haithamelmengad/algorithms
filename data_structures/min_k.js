@@ -6,7 +6,8 @@
 // the minimum (or maximum) k values from an array.
 
 // Write a function that, given an array and a k, returns the min k elements
-// in that array in order from lowest to highest.
+// in that array in order from lowest to highest. Try doing this without
+// completely sorting the array, and do it in linear time (O(n)).
 
 // Examples:
 // min_k([1, 2, 3], 0) -> []
