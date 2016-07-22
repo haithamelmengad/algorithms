@@ -14,6 +14,10 @@
 // Constructor: instantiate a heap, passing in an optional comparator function.
 // If no comparator function is provided, it should default to less than
 // (i.e., a min heap).
+
+// A comparator function takes two arguments, a and b, and returns a negative
+// number if a < b (i.e., a comes before b), zero if a is equal to b, and a
+// positive number if a > b.
 var heap = function(comparator) {
 
 };

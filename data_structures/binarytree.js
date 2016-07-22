@@ -30,6 +30,26 @@ Tree.prototype.equals = function(tree) {
 // of this exercise, a balanced tree is defined to be a tree such that the
 // heights of the two subtrees of any node never differ by more than one.
 // (Cracking the Coding Interview #4.4)
+//
+// Here are some examples of balanced and unbalanced trees.
+//
+// Balanced:
+//
+//     A
+//   /   \
+//  B     C
+//
+//     A
+//   /
+//  B
+//
+// Unbalanced:
+//
+//      A
+//     /
+//    B
+//   /
+//  C
 Tree.prototype.isBalanced = function() {
   // YOUR CODE HERE
 };
@@ -38,6 +58,19 @@ Tree.prototype.isBalanced = function() {
 // binary tree. Avoid storing additional nodes in a data structure.
 // NOTE: This is not necessarily a binary search tree. (Cracking the
 // Coding Interview #4.8)
+
+//
+// Example:
+//
+//         A
+//        / \
+//       B   C
+//      / \   \
+//     D   E   F
+//
+// firstCommonAncestor(B, F) -> A
+// firstCommonAncestor(D, E) -> B
+// firstCommonAncestor(C, F) -> A
 var firstCommonAncestor = function(root, tree1, tree2) {
   // YOUR CODE HERE
 };

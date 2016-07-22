@@ -1,20 +1,20 @@
 "use strict";
 
 describe("min_k", function() {
-  it("min_k([], 0) -> undef", function() {
-    expect(min_k([], 0)).toBeUndefined();
+  it("min_k([], 0) -> []", function() {
+    expect(min_k([], 0)).toEqual([]);
   });
-  it("min_k([], 1) -> undef", function() {
-    expect(min_k([], 1)).toBeUndefined();
+  it("min_k([], 1) -> []", function() {
+    expect(min_k([], 1)).toEqual([]);
   });
-  it("min_k([1, 2, 3], 0) -> undef", function() {
-    expect(min_k([1, 2, 3], 0)).toBeUndefined();
+  it("min_k([1, 2, 3], 0) -> []", function() {
+    expect(min_k([1, 2, 3], 0)).toEqual([]);
   });
   it("min_k([1, 2, 3], 1) -> 1", function() {
-    expect(min_k([1, 2, 3], 1)).toBe(1);
+    expect(min_k([1, 2, 3], 1)).toEqual([1]);
   });
   it("min_k([3, 2, 1], 1) -> 1", function() {
-    expect(min_k([3, 2, 1], 1)).toBe(1);
+    expect(min_k([3, 2, 1], 1)).toEqual([1]);
   });
   it("min_k([1, 2, 3], 2) -> [1, 2]", function() {
     expect(min_k([1, 2, 3], 2)).toEqual([1, 2]);

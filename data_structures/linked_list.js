@@ -15,7 +15,7 @@
 var list = function () {
   var self = this, first = null, last = null;
 
-  // Implement a reverse method
+  // Implement a reverse method. It should return a new, reversed linked list.
   self.reverse = function () {
     // YOUR CODE HERE
   };
