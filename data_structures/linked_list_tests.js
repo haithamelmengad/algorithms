@@ -49,7 +49,7 @@ describe("heap", function() {
       aList.insert(2);
       aList.insert(3);
       aList.insert(5);
-      expect(toArray(aList)).toEqual([5, 3, 2, 1, 0]);
+      expect(toArray(aList.reverse())).toEqual([5, 3, 2, 1, 0]);
     });
   });
 });
