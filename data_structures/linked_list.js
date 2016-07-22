@@ -17,7 +17,7 @@ var list = function () {
 
   // Implement a reverse method. It should return a new, reversed linked list.
   self.reverse = function () {
-    // YOUR CODE HERE
+
   };
 
   self.insert = function (value) {
@@ -32,16 +32,6 @@ var list = function () {
       head.next = node;
       last = head.next;
     }
-  };
-
-  self.toArray = function () {
-    var array = [];
-    var head = first;
-    while (head != null) {
-      array.push(head.value);
-      head = head.next;
-    }
-    return array;
   };
 
   var Node = function (value) {

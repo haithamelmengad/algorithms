@@ -88,6 +88,15 @@ describe("binary tree", function() {
             new Tree(1))),
         ancestorTree);
     });
+    it("returns false if root is empty", function() {
+      expect(firstCommonAncestor(undefined, leftTree, rightTree)).toBe(false);
+    });
+    it("returns false if no common ancestor", function() {
+      expect(firstCommonAncestor(leftTree, leftTree, rightTree)).toBe(false);
+    });
+    it("returns root if root is common ancestor", function() {
+      expect(firstCommonAncestor(ancestorTree, leftTree, rightTree)).toBe(ancestorTree);
+    });
     it("finds the ancestor of two trees", function() {
       expect(firstCommonAncestor(rootTree, leftTree, rightTree)).toBe(ancestorTree);
     });
