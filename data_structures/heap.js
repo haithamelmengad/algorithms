@@ -71,7 +71,7 @@ heap.prototype.remove = function(node) {
 
 heap.prototype.bubbleUp = function(n) {
   // Fetch the element that has to be moved.
-  var element = this.content[n], score = this.scoreFunction(element);
+  var element = this.content[n]; //, score = this.scoreFunction(element);
   // When at 0, an element can not go up any further.
   while (n > 0) {
     // Compute the parent element's index, and fetch it.
@@ -79,7 +79,7 @@ heap.prototype.bubbleUp = function(n) {
       parent = this.content[parentN];
     // If the parent has a lesser score, things are in order and we
     // are done.
-    if (score >= this.scoreFunction(parent))
+    if (this.scoreFunction(element, parent)>=0)
       break;
 
     // Otherwise, swap the parent with the current element and
@@ -93,8 +93,8 @@ heap.prototype.bubbleUp = function(n) {
 heap.prototype.sinkDown = function(n) {
   // Look up the target element and its score.
   var length = this.content.length,
-    element = this.content[n],
-    elemScore = this.scoreFunction(element);
+    element = this.content[n];
+    // elemScore = this.scoreFunction(element);
 
   while(true) {
     // Compute the indices of the child elements.
@@ -105,17 +105,19 @@ heap.prototype.sinkDown = function(n) {
     // If the first child exists (is inside the array)...
     if (child1N < length) {
       // Look it up and compute its score.
-      var child1 = this.content[child1N],
-        child1Score = this.scoreFunction(child1);
+      var child1 = this.content[child1N];
+        // child1Score = this.scoreFunction(child1);
       // If the score is less than our element's, we need to swap.
-      if (child1Score < elemScore)
+      if (this.scoreFunction(child1, element) <= 0)
         swap = child1N;
     }
     // Do the same checks for the other child.
     if (child2N < length) {
-      var child2 = this.content[child2N],
-        child2Score = this.scoreFunction(child2);
-      if (child2Score < (swap == null ? elemScore : child1Score))
+      var child2 = this.content[child2N];
+        // child2Score = this.scoreFunction(child2);
+      if ((swap == null && this.scoreFunction(child2, element) <= 0) ||
+          (swap != null && this.scoreFunction(child2, child1) <= 0))
+      // if (child2Score < (swap == null ? elemScore : child1Score))
         swap = child2N;
     }
 
