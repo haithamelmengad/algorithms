@@ -24,7 +24,19 @@ var list = function () {
 
 // Implement a reverse method. It should return a new, reversed linked list.
 list.prototype.reverse = function () {
-  // YOUR CODE HERE
+  var head = this.first;
+  var array = [];
+  while (head != null) {
+    array.push(head.value);
+    // console.log("pushing ", head.value);
+    head = head.next;
+  }
+  var newList = new list();
+  while (array.length) {
+    // console.log("inserting ", array[array.length-1]);
+    newList.insert(array.pop());
+  }
+  return newList;
 };
 
 list.prototype.insert = function (value) {
