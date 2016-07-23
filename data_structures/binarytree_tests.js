@@ -8,7 +8,8 @@ describe("binary tree", function() {
         // Depth: 3
         new Tree(6,
           new Tree(5,
-            new Tree(5))),
+            new Tree(5)),
+          new Tree(10)),
         // Depth: 4
         new Tree('-',
           // Depth: 3
