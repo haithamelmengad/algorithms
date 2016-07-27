@@ -50,8 +50,16 @@ Tree.prototype.equals = function(tree) {
 //    B
 //   /
 //  C
+Tree.prototype.depth = function() {
+  var leftDepth = _.isUndefined(this.left) ? 0 : this.left.depth();
+  var rightDepth = _.isUndefined(this.right) ? 0 : this.right.depth();
+  return Math.max(leftDepth, rightDepth)+1;
+};
+
 Tree.prototype.isBalanced = function() {
-  // YOUR CODE HERE
+  var leftDepth = _.isUndefined(this.left) ? 0 : this.left.depth();
+  var rightDepth = _.isUndefined(this.right) ? 0 : this.right.depth();
+  return Math.abs(leftDepth - rightDepth) <= 1;
 };
 
 // Implement a function to find the first common ancestor of two nodes in a
@@ -71,8 +79,25 @@ Tree.prototype.isBalanced = function() {
 // firstCommonAncestor(B, F) -> A
 // firstCommonAncestor(D, E) -> B
 // firstCommonAncestor(C, F) -> A
+Tree.prototype.contains = function(tree) {
+  return (
+    (this === tree) ||
+    (!_.isUndefined(this.left) && this.left.contains(tree)) ||
+    (!_.isUndefined(this.right) && this.right.contains(tree)));
+};
 var firstCommonAncestor = function(root, tree1, tree2) {
-  // YOUR CODE HERE
+  if (!root)
+    return false;
+
+  var
+    leftContains1 = !_.isUndefined(root.left) && root.left.contains(tree1),
+    leftContains2 = !_.isUndefined(root.left) && root.left.contains(tree2),
+    rightContains1 = !_.isUndefined(root.right) && root.right.contains(tree1),
+    rightContains2 = !_.isUndefined(root.right) && root.right.contains(tree2);
+  if ((leftContains1 && rightContains2) || (leftContains2 && rightContains1))
+    return root;
+  else
+    return firstCommonAncestor(root.left, tree1, tree2) || firstCommonAncestor(root.right, tree1, tree2);
 };
 
 window.Tree = Tree;

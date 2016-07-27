@@ -14,7 +14,7 @@
 // min_k([1], 1) -> [1]
 // min_k([5, 2, 9], 2) -> [2, 5]
 var min_k = function(array, k) {
-  // YOUR CODE HERE
+  return array.sort(function (a, b) { return a-b }).slice(0,k);
 };
 
 window.min_k = min_k;
