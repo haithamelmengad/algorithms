@@ -1,6 +1,6 @@
 "use strict";
 
-describe("linked list", function() {
+describe("heap", function() {
   var aList;
   beforeEach(function() {
     aList = new list();
