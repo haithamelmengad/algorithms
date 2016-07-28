@@ -67,7 +67,7 @@ describe("weighted graph", function() {
       g.addEdge("B","C");
     });
     it("isAdjacent('A','B') -> true", function() {
-      expect(g.isAdjacent("A","B")).toBe(true);
+      expect(g.isAdjacent("A","B")).toBeTruthy();
     });
     it("isAdjacent('B','C') -> true", function() {
       expect(g.isAdjacent("B","C")).toBeTruthy();
