@@ -15,16 +15,7 @@
 // [[1,2],    [[3,1],
 //  [3,4]] ->  [4,2]]
 function rotateMatrix(m) {
-  var newArray = [];
-  for (var i = 0; i < m.length; i++) {
-    var innerArray = [];
-    for (var j = 0; j < m.length; j++) {
-      var j_2 = m.length - 1 - j;
-      innerArray[j] = m[j_2][i];
-    }
-    newArray.push(innerArray);
-  }
-  return newArray;
+  // YOUR CODE HERE
 }
 
 window.rotateMatrix = rotateMatrix;
