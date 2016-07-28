@@ -50,7 +50,7 @@ describe("graph search", function() {
     it("returns sole vertex for a single-vertex graph", function() {
       var g = new Graph();
       g.addVertex("A");
-      expect(g.dfs()).toEqual(["A"]);
+      expect(g.dfs("A")).toEqual(["A"]);
     });
     it("follows a chain of vertices", function() {
       var g = new Graph();
@@ -63,7 +63,7 @@ describe("graph search", function() {
       g.addEdge("B","C");
       g.addEdge("C","D");
       g.addEdge("D","E");
-      expect(g.dfs()).toEqual(["A","B","C","D","E"]);
+      expect(g.dfs("A")).toEqual(["A","B","C","D","E"]);
     });
     it("goes deep not broad", function() {
       var g = new Graph();
@@ -78,14 +78,14 @@ describe("graph search", function() {
       g.addEdge("B","F");
       g.addEdge("C","D");
       g.addEdge("D","E");
-      expect(g.dfs()).toEqual(["A","B","C","D","E","F"]);
+      expect(g.dfs("A")).toEqual(["A","B","C","D","E","F"]);
     });
   });
   describe("breadth-first search", function() {
     it("returns sole vertex for a single-vertex graph", function() {
       var g = new Graph();
       g.addVertex("A");
-      expect(g.bfs()).toEqual(["A"]);
+      expect(g.bfs("A")).toEqual(["A"]);
     });
     it("follows a chain of vertices", function() {
       var g = new Graph();
@@ -98,7 +98,7 @@ describe("graph search", function() {
       g.addEdge("B","C");
       g.addEdge("C","D");
       g.addEdge("D","E");
-      expect(g.bfs()).toEqual(["A","B","C","D","E"]);
+      expect(g.bfs("A")).toEqual(["A","B","C","D","E"]);
     });
     it("goes broad not deep", function() {
       var g = new Graph();
@@ -113,7 +113,7 @@ describe("graph search", function() {
       g.addEdge("B","F");
       g.addEdge("C","D");
       g.addEdge("D","E");
-      expect(g.bfs()).toEqual(["A","B","C","F","D","E"]);
+      expect(g.bfs("A")).toEqual(["A","B","C","F","D","E"]);
     });
   });
 });
