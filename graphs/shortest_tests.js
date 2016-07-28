@@ -56,6 +56,9 @@ describe("shortestPath()", function() {
     g.addVertex(12);
     g.addVertex(13);
     g.addVertex(14);
+    g.addVertex(15);
+    g.addVertex(16);
+    g.addVertex(17);
     g.addEdge(0, 4, 6);
     g.addEdge(0, 14, 3);
     g.addEdge(1, 5, 1);
@@ -95,7 +98,7 @@ describe("shortestPath()", function() {
     g.addEdge(17, 10, 5);
     g.addEdge(17, 13, 3);
     var sp = shortestPath(g, 0, 17);
-    expect(sp.path).toEqual([]);
-    expect(sp.total).toBe();
+    expect(sp.path).toEqual([ 4, 8, 5, 2, 3, 6, 10, 17 ]);
+    expect(sp.total).toBe(45);
   });
 });
