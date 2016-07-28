@@ -3,7 +3,7 @@
 describe("weighted graph", function() {
   describe("an empty graph", function() {
     it("has no vertices", function() {
-      var g = new Graph();
+      var g = new WGraph();
       expect(g.vertices()).toEqual(jasmine.any(Array));
       expect(g.vertices().length).toBe(0);
     });
@@ -11,7 +11,7 @@ describe("weighted graph", function() {
   describe("a single-vertex graph", function() {
     var g;
     beforeEach(function() {
-      g = new Graph();
+      g = new WGraph();
       g.addVertex("A");
     });
     it("has one vertex", function() {
@@ -29,7 +29,7 @@ describe("weighted graph", function() {
   describe("a single-edge graph", function() {
     var g;
     beforeEach(function() {
-      g = new Graph();
+      g = new WGraph();
       g.addVertex("A");
       g.addVertex("B");
       g.addEdge("A","B");
@@ -59,7 +59,7 @@ describe("weighted graph", function() {
   describe("a two-edge graph", function() {
     var g;
     beforeEach(function() {
-      g = new Graph();
+      g = new WGraph();
       g.addVertex("A");
       g.addVertex("B");
       g.addVertex("C");
@@ -92,7 +92,7 @@ describe("weighted graph", function() {
   describe("adding and removing an edge", function() {
     var g;
     beforeEach(function() {
-      g = new Graph();
+      g = new WGraph();
       g.addVertex("A");
       g.addVertex("B");
       g.addVertex("C");
@@ -124,7 +124,7 @@ describe("weighted graph", function() {
   describe("adding and removing a vertex", function() {
     var g;
     beforeEach(function() {
-      g = new Graph();
+      g = new WGraph();
       g.addVertex("A");
       g.addVertex("B");
       g.addVertex("C");
