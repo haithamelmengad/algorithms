@@ -2,29 +2,27 @@
 
 describe("shortestPath()", function() {
   it("returns shortest path with two vertices", function() {
-    var g = new Graph();
+    var g = new WGraph();
     g.addVertex("A");
     g.addVertex("B");
     g.addEdge("A","B",3);
     var sp = shortestPath(g, "A", "B");
-    expect(sp).toBe(jasmine.objectContaining(["path","total"]));
     expect(sp.path).toEqual(["A","B"]);
     expect(sp.total).toBe(3);
   });
   it("returns shortest path with three vertices", function() {
-    var g = new Graph();
+    var g = new WGraph();
     g.addVertex("A");
     g.addVertex("B");
     g.addVertex("C");
     g.addEdge("A","B",3);
     g.addEdge("B","C",2);
     var sp = shortestPath(g, "A", "C");
-    expect(sp).toBe(jasmine.objectContaining(["path","total"]));
     expect(sp.path).toEqual(["A","B","C"]);
     expect(sp.total).toBe(5);
   });
   it("returns shortest path not fewest hops", function() {
-    var g = new Graph();
+    var g = new WGraph();
     g.addVertex("A");
     g.addVertex("B");
     g.addVertex("C");
@@ -38,12 +36,11 @@ describe("shortestPath()", function() {
     g.addEdge("B","E",1);
     g.addEdge("E","F",3);
     var sp = shortestPath(g, "A", "F");
-    expect(sp).toBe(jasmine.objectContaining(["path","total"]));
     expect(sp.path).toEqual(["A","B","E","F"]);
     expect(sp.total).toBe(6);
   });
   it("solves a complex graph", function() {
-    var g = new Graph();
+    var g = new WGraph();
     g.addVertex(0);
     g.addVertex(1);
     g.addVertex(2);
@@ -98,7 +95,6 @@ describe("shortestPath()", function() {
     g.addEdge(17, 10, 5);
     g.addEdge(17, 13, 3);
     var sp = shortestPath(g, 0, 17);
-    expect(sp).toBe(jasmine.objectContaining(["path","total"]));
     expect(sp.path).toEqual([]);
     expect(sp.total).toBe();
   });
