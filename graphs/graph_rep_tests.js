@@ -23,7 +23,7 @@ describe("graph representations", function() {
   });
   describe("matrixToList", function() {
     it("converts an empty matrix to an empty list", function() {
-      expect(matrixToList([]).toEqual([]));
+      expect(matrixToList([])).toEqual([]);
     });
     it("matrixToList([[0,1],[1,0]]) -> [[1]]", function() {
       var list = matrixToList([[0,1],[1,0]]);
