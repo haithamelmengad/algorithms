@@ -73,10 +73,10 @@ describe("graph", function() {
       expect(g.isAdjacent("B","C")).toBeTruthy();
     });
     it("isAdjacent('A','C') -> false", function() {
-      expect(g.isAdjacent("A","C")).toBeFalsy();
+      expect(g.isAdjacent("A","C")).toBe(false);
     });
     it("isAdjacent('C','A') -> false", function() {
-      expect(g.isAdjacent("C","A")).toBeFalsy();
+      expect(g.isAdjacent("C","A")).toBe(false);
     });
     it("neighbors('A') -> ['B']", function() {
       expect(g.neighbors("A")).toEqual(["B"]);
@@ -102,23 +102,23 @@ describe("graph", function() {
     });
     it("removeEdge('A','C') -> isAdjacent('A','C') -> false", function() {
       g.removeEdge("A","C");
-      expect(g.isAdjacent("A","C")).toBeFalsy();
+      expect(g.isAdjacent("A","C")).toBe(false);
     });
     it("removeEdge('C','A') -> isAdjacent('A','C') -> false", function() {
       g.removeEdge("C","A");
-      expect(g.isAdjacent("A","C")).toBeFalsy();
+      expect(g.isAdjacent("A","C")).toBe(false);
     });
     it("removeEdge('A','C') -> isAdjacent('C','A') -> false", function() {
       g.removeEdge("A","C");
-      expect(g.isAdjacent("C","A")).toBeFalsy();
+      expect(g.isAdjacent("C","A")).toBe(false);
     });
     it("removeEdge('C','A') -> isAdjacent('C','A') -> false", function() {
       g.removeEdge("C","A");
-      expect(g.isAdjacent("C","A")).toBeFalsy();
+      expect(g.isAdjacent("C","A")).toBe(false);
     });
     it("removeEdge('C','A') -> neighbors('A') -> ['B']", function() {
       g.removeEdge("C","A");
-      expect(g.isAdjacent("C","A")).toBeFalsy();
+      expect(g.isAdjacent("C","A")).toBe(false);
     });
   });
   describe("adding and removing a vertex", function() {
