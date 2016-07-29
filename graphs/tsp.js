@@ -61,3 +61,10 @@ TSP.pairwise = function(g) {
 // http://gebweb.net/optimap/
 // http://www.iwr.uni-heidelberg.de/groups/comopt/software/TSPLIB95/
 // https://louisville.edu/speed/faculty/sheragu/Research/Intelligent/tsp.PDF
+// https://developers.google.com/optimization/routing/tsp
+// https://www.youtube.com/watch?v=STbkQbsIYVQ (explanation of exact solution)
+// http://itunes.apple.com/us/app/concorde-tsp/id498366515?mt=8 - Pretty sweet
+// app that includes visualizations
+
+window.TSP = TSP;
+
