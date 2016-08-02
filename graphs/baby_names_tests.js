@@ -20,6 +20,7 @@ describe("babyNamePopularity()", function() {
     [['Chris', 'Kris', 'Christopher'], 36]
   ];
 
+  console.log('Return value', freq);
   expectedFreq.forEach(function([names, num]) {
     it(`${JSON.stringify(names)} -> ${num}`, function() {
       expect(names.map(name => freq[name]).indexOf(num) > -1).toBe(true);
