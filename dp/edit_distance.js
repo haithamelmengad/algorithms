@@ -6,6 +6,9 @@
 // - delete a single item
 // - replace a single item with another item
 //
+// This is a good walkthrough of the solution:
+// https://www.youtube.com/watch?v=We3YDTzNXEk
+//
 // Edit distance is otherwise known as Levenshtein distance.  This is a good
 // explanation of how to implement this algorithm efficiently:
 // http://odur.let.rug.nl/kleiweg/lev/levenshtein.html

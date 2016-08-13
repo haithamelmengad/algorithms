@@ -10,6 +10,9 @@
 //
 // More details:
 // https://www.hackerrank.com/challenges/coin-change
+//
+// Walkthrough:
+// https://www.youtube.com/watch?v=_fgjrs570YE
 function coinChange(cents, coins) {
   // YOUR CODE HERE
 }
