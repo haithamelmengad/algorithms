@@ -2,6 +2,8 @@
 
 ## Questions
 
+### Basics
+
 1. What does the `var` keyword do?
 1. What does the `throw` keyword do?
 1. How can you catch exceptions in JavaScript?
@@ -13,6 +15,85 @@
 1. What's the purpose of the 'new' keyword?
 1. What's the difference between 'throw' and 'return'?
 1. What's the return value of a function that doesn't call 'return'?
+1. What are the different ways of defining a function in JS? What are their pros and cons?
+  - global, non-hoisted, local & hoisted
+1. Can you access a variable defined inside a function, __outside__ of that function? If not, why?
+1. What does `.bind()` do?
+  - How do you use it to "set the _context_" of a function?
+  - How do you use it to _pass in variables_ to a function?
+1. How do you iterate through arguments in a function?
+1. How do you break out of a loop?
+1. How do you remove an item somewhere in the middle of an array?
+1. What are different ways of iterating through arrays? What are their differences?
+1. In a `for` loop, what are the semi-colon separated values? (i.e. `for (x; y; z) { ... }`)
+1. What does `.map()` do?
+1. What does `.reduce()` do?
+1. What's the difference between `.concat()` and `.push()` on an array?
+  - What do each return?
+  - What kind of _"effect"_ do they both have on the array?
+1. What does `Object.assign()` do?
+1. How do you iterate through the keys of an object?
+1. What's a RegEx and what can you use it for?
+1. What are the standard types in JS?
+1. What's the difference between a "strict comparison" and "loose comparison"? How do you write both?
+  - truth table review! Is `NaN == NaN`?
+  - What is an item's _"truth value"_?
+1. What's the difference between `obj[key]`, `obj.key`, `obj["key"]`?
+
+### ES6/ES2015/ECMAScript 2015
+
+1. What is an "arrow" function?
+  - How does it differ from the typical function declarations?
+  - What does it mean for an arrow function to be auto-bound?
+1. What is a promise and what does it improve upon?
+  - how do you write one?
+  - What does `Promise.all` do?
+  - What's the difference between `.then()` and `catch()`
+  - How do you use it to replace a callback?
+1. What does `import` do?
+  - What does the line `import  { name, id } from "./user"` do/ what is de-structuring/unpacking?
+1. What is a template string?
+  - How do you write one?
+1. What is the spread operator?
+1. What is a generator? What does `yield` do?
+
+### Node.JS
+
+1. What's the REPL?
+1. What is node and how does it change how you use JavaScript?
+1. What's the difference between node and express?
+1. What is `npm`?
+  - What is a _"module"_?
+  - What are _"dependencies"_? Why is knowing about them important?
+  - How do you install a package __and__ save it as a dependency? What about saving it as a dev dependency?
+  - What does `module.exports` do?
+1. What does the `package.json` file do?
+1. How do you store variables in a `*.env` file? What are they typically used for?
+  - How do you make them available to your node application?
+1. What's the difference between a client and a server? Provide examples.
+1. What is a route/route handler?
+  - In a route handler, what is the `req` argument and where does it come from?
+  - What does the `next` argument do?
+1. How does a POST request differ from a `GET` request?
+1. When you try to send multiple responses back, why does an error occur?
+1. How do you write a "wall"?
+1. When you 
+1. How do you generate a new express project using express-generator?
+1. What is "middleware"?
+1. What is a session?
+1. What is the use of serialization and deserialization?
+1. How do you send a redirect to the user's browser?
+1. What is a `200` HTTP status code? `400`? `500`?
+1. What is `JSON` (in terms of formats)?
+
+### Handlebars templating
+
+1. What is Handlebars and what does it do?
+1. How do you render a handlebars template?
+1. How do you iterate through an array in handlebars?
 
 ## Links and resources
 
+[15 JS gotchas](http://www.standardista.com/javascript/15-common-javascript-gotchas/)
+[more gotchas](https://github.com/stevekwan/best-practices/blob/master/javascript/gotchas.md)
+[ES6](http://webapplog.com/es6/)
