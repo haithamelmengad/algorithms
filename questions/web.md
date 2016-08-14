@@ -7,6 +7,7 @@
   - Explain the meaning of each of these CSS units for expressing length: cm, em, in, mm, pc, pt, px
   - What is CORS? How does it work?
   - Explain the purpose of each of the HTTP request types when used with a RESTful web service.
+  - What is the HTTP request header, and what kind of information usually goes in it?
   - Explain the basic structure of a MIME multipart message when used to transfer different content type parts. Provide a simple example.
   - How do we execute a series of AJAX calls in order?
   - How do we execute a series of AJAX calls and then run something else only after all of those calls have completed?
@@ -15,6 +16,9 @@
   - What does “!important” do?
   - How many different media queries are used by the Bootstrap grid system by default?
   - What dependencies does Bootstrap require for it to work properly?
+  - What is HTML form submission?
+  - What does the `action` attribute on an HTML form do?
+  - When an HTML form is submitted via a POST method, what `Content-Type` does the form come in?
 - jQuery
   - Explain and contrast the usage of event.preventDefault() and event.stopPropagation(). Provide an example.
   - What’s the deal with the $ in jQuery? What is it and what does it mean? Also, how can jQuery be used in conjunction with another JavaScript library that also uses $ for naming? Bonus credit if you can provide two answers.
