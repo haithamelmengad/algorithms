@@ -10,5 +10,5 @@
 1. [Web development knowledge questions](web.md)
 1. Algorithms interview questions
 1. Frontend interview questions
-1. Application and schema design interview questions
+1. [Application and schema design interview questions](design.md)
 
