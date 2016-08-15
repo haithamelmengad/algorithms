@@ -72,29 +72,36 @@
 1. What's the REPL?
 1. What is node and how does it change how you use JavaScript?
 1. What's the difference between node and JavaScript in the browser?
-1. What's the difference between node and express?
 1. What is `npm`?
   - What is a _"module"_?
   - What are _"dependencies"_? Why is knowing about them important?
   - How do you install a package __and__ save it as a dependency? What about saving it as a dev dependency?
+  - What's the difference between a dependence and a dev dependency?
   - What does `module.exports` do?
 1. What does the `package.json` file do?
-1. How do you store variables in a `*.env` file? What are they typically used for?
-  - How do you make them available to your node application?
+1. How do we generate a starter `package.json` file?
+1. How do we read environment variables in a node app? Why is this useful?
+1. How can we store environment variables in a file and update the environment with them before running a node app?
+
+### ExpressJS
+
+1. What's the difference between node and express? What is express used for?
 1. What's the difference between a client and a server? Provide examples.
 1. What is a route/route handler?
   - In a route handler, what is the `req` argument and where does it come from?
   - What does the `next` argument do?
-1. How does a POST request differ from a `GET` request?
-1. When you try to send multiple responses back, why does an error occur?
-1. How do you write a "wall"?
-1. When you 
+1. What are the types of HTTP requests and how do they map to the REST/CRUD operations?
+1. What's a RESTful API and why is it useful?
+1. How does a `POST` request differ from a `GET` request?
+1. What causes the 'cannot set headers' error? How do we prevent this?
+1. How do you prevent unauthenticated users from accessing a route or a set of routes?
+1. What's the difference between an `app` and a `router`?
 1. How do you generate a new express project using express-generator?
 1. What is "middleware"?
-1. What is a session?
+1. What is a session? How can we save sessions?
 1. What is the use of serialization and deserialization?
 1. How do you send a redirect to the user's browser?
-1. What is a `200` HTTP status code? `400`? `500`?
+1. What is a `2xx` HTTP status code? `3xx`? `4xx`? `5xx`?
 1. What is `JSON` (in terms of formats)?
 1. What is callback hell? How do we prevent it?
 1. What's the first argument to a node-style callback?
@@ -107,6 +114,6 @@
 
 ## Links and resources
 
-[15 JS gotchas](http://www.standardista.com/javascript/15-common-javascript-gotchas/)
-[more gotchas](https://github.com/stevekwan/best-practices/blob/master/javascript/gotchas.md)
-[ES6](http://webapplog.com/es6/)
+- [15 JS gotchas](http://www.standardista.com/javascript/15-common-javascript-gotchas/)
+- [more gotchas](https://github.com/stevekwan/best-practices/blob/master/javascript/gotchas.md)
+- [ES6](http://webapplog.com/es6/)
