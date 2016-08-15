@@ -88,43 +88,6 @@
 1. How do we generate a starter `package.json` file?
 1. How do we read environment variables in a node app? Why is this useful?
 
-### ExpressJS
-
-1. What's the difference between node and express? What is express used for?
-1. What's the difference between a client and a server? Provide examples.
-1. What is a route/route handler?
-  - In a route handler, what is the `req` argument and where does it come from?
-  - What does the `next` argument do?
-1. What are the types of HTTP requests and how do they map to the REST/CRUD operations?
-1. What's a RESTful API and why is it useful?
-1. How can you write an endpoint that only takes `GET` requests?
-  How about `POST` requests? How about an endpoint that accepts
-  any request type/method?
-1. What causes the 'cannot set headers' error? How do we prevent this?
-1. How do you prevent unauthenticated users from accessing a route or a set of routes?
-1. What's the difference between an `app` and a `router`?
-1. What is "middleware"?
-1. What is a session? How are sessions implemented?
-1. How do you send a redirect to the user's browser?
-1. What is a `2xx` HTTP status code? `3xx`? `4xx`? `5xx`?
-1. What is `JSON` (in terms of formats)?
-
-### Express and Handlebars
-
-1. What is a route/route handler?
-  - In a route handler, what is the `req` argument and where does it come from?
-  - What does the `next` argument do?
-1. How do you set HTTP status codes in Express?
-1. How do you send a redirect to the user's browser in Express?
-1. If you try to do `res.send()` multiple times, what happens?
-1. What is "middleware"?
-1. How can you use "middleware" to ensure some routes are only
-  accessible by logged in users?
-1. What is a session?
-1. What is Handlebars and what does it do?
-1. How do you render a handlebars template?
-1. How do you iterate through an array in handlebars?
-
 ## Links and resources
 
 - [16 Common JavaScript Gotchas](http://www.standardista.com/javascript/15-common-javascript-gotchas/)
