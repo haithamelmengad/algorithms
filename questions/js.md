@@ -42,6 +42,10 @@
 1. What's the difference between `obj[key]`, `obj.key`, `obj["key"]`?
 1. What does `"use strict"` do? Where does it go? Where does it take effect? Why might we use it?
 1. Explain variable scoping in JavaScript.
+1. Is JavaScript single-threaded or multi-threaded? What does this mean exactly?
+1. What is an asynchronous call? When are they useful? How do these work in JavaScript?
+1. What is the JavaScript event loop? Why is it important?
+1. What does calling `setTimeout` with a delay of zero do?
 
 ### ES6/ES2015/ECMAScript 2015
 
@@ -82,6 +86,7 @@
 1. How do we generate a starter `package.json` file?
 1. How do we read environment variables in a node app? Why is this useful?
 1. How can we store environment variables in a file and update the environment with them before running a node app?
+1. How do we use multiple threads? When might we want to?
 
 ### ExpressJS
 
@@ -117,3 +122,5 @@
 - [15 JS gotchas](http://www.standardista.com/javascript/15-common-javascript-gotchas/)
 - [more gotchas](https://github.com/stevekwan/best-practices/blob/master/javascript/gotchas.md)
 - [ES6](http://webapplog.com/es6/)
+- https://www.toptal.com/javascript/interview-questions
+- https://www.toptal.com/nodejs/interview-questions
