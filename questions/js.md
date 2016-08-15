@@ -1,4 +1,4 @@
-# JavaScript knowledge interview questions 
+# JavaScript knowledge interview questions
 
 ## Questions
 
@@ -9,12 +9,14 @@
 1. How can you catch exceptions in JavaScript?
 1. What's hoisting? What gets hoisted and what doesn't?
 1. What's an Immediately-Invoked Function Expression (IIFE)? Why do we use them?
+1. What is the `this` keyword equal to inside a function?
 1. What's the different between .call() and .apply()?
 1. How does 'this' work in JavaScript?
 1. What's the .prototype property in JavaScript? When do we use it?
 1. What's the purpose of the 'new' keyword?
 1. What's the difference between 'throw' and 'return'?
 1. What's the return value of a function that doesn't call 'return'?
+1. What's a closure? How do you use closures in JavaScript?
 1. What are the different ways of defining a function in JS? What are their pros and cons? When might we use each?
   - global, non-hoisted, local & hoisted
 1. Can you access a variable defined inside a function, __outside__ of that function? If not, why?
@@ -26,6 +28,7 @@
 1. How do you remove/replace an item somewhere in the middle of an array?
 1. What are different ways of iterating through arrays? What are their differences?
 1. In a `for` loop, what are the semi-colon separated values? (i.e. `for (x; y; z) { ... }`)
+1. How does a `while` loop differ from a for loop?
 1. What does `.map()` do?
 1. What does `.reduce()` do?
 1. Give an example of where we might use `.map(...).reduce(...)`.
@@ -36,12 +39,11 @@
 1. How do you iterate through the keys of an object?
 1. What's a RegEx and what can you use it for?
 1. What are the standard types in JS?
-1. What's the difference between a "strict comparison" and "loose comparison"? How do you write both? When might each be useful?
+1. What's the difference between a "===" and "=="?
   - truth table review! Is `NaN == NaN`?
   - What is an item's _"truth value"_?
 1. What's the difference between `obj[key]`, `obj.key`, `obj["key"]`?
-1. What does `"use strict"` do? Where does it go? Where does it take effect? Why might we use it?
-1. Explain variable scoping in JavaScript.
+1. What does `"use strict"` do? Where does it go?
 
 ### ES6/ES2015/ECMAScript 2015
 
@@ -73,6 +75,7 @@
 1. What is node and how does it change how you use JavaScript?
 1. What's the difference between node and JavaScript in the browser?
 1. What's the difference between node and express?
+1. Where are variables declared with `var` in Node module visible?
 1. What is `npm`?
   - What is a _"module"_?
   - What are _"dependencies"_? Why is knowing about them important?
@@ -81,32 +84,30 @@
 1. What does the `package.json` file do?
 1. How do you store variables in a `*.env` file? What are they typically used for?
   - How do you make them available to your node application?
-1. What's the difference between a client and a server? Provide examples.
-1. What is a route/route handler?
-  - In a route handler, what is the `req` argument and where does it come from?
-  - What does the `next` argument do?
-1. How does a POST request differ from a `GET` request?
-1. When you try to send multiple responses back, why does an error occur?
-1. How do you write a "wall"?
-1. When you 
 1. How do you generate a new express project using express-generator?
-1. What is "middleware"?
-1. What is a session?
 1. What is the use of serialization and deserialization?
-1. How do you send a redirect to the user's browser?
-1. What is a `200` HTTP status code? `400`? `500`?
 1. What is `JSON` (in terms of formats)?
 1. What is callback hell? How do we prevent it?
 1. What's the first argument to a node-style callback?
 
-### Handlebars templating
+### Express and Handlebars
 
+1. What is a route/route handler?
+  - In a route handler, what is the `req` argument and where does it come from?
+  - What does the `next` argument do?
+1. How do you set HTTP status codes in Express?
+1. How do you send a redirect to the user's browser in Express?
+1. If you try to do `res.send()` multiple times, what happens?
+1. What is "middleware"?
+1. How can you use "middleware" to ensure some routes are only
+  accessible by logged in users?
+1. What is a session?
 1. What is Handlebars and what does it do?
 1. How do you render a handlebars template?
 1. How do you iterate through an array in handlebars?
 
 ## Links and resources
 
-[15 JS gotchas](http://www.standardista.com/javascript/15-common-javascript-gotchas/)
-[more gotchas](https://github.com/stevekwan/best-practices/blob/master/javascript/gotchas.md)
-[ES6](http://webapplog.com/es6/)
+- [16 Common JavaScript Gotchas](http://www.standardista.com/javascript/15-common-javascript-gotchas/)
+- [Common JavaScript "Gotchas"](https://github.com/stevekwan/best-practices/blob/master/javascript/gotchas.md)
+- [Top 10 ES6 Features Every Busy JavaScript Developer Must Know](http://webapplog.com/es6/)

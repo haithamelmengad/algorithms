@@ -6,8 +6,16 @@
   - Explain the CSS “box model” and the layout components that it consists of.
   - Explain the meaning of each of these CSS units for expressing length: cm, em, in, mm, pc, pt, px
   - What is CORS? How does it work?
-  - Explain the purpose of each of the HTTP request types when used with a RESTful web service.
+  - Explain the purpose of each of the HTTP request types/methods when used with a RESTful web service.
   - What is the HTTP request header, and what kind of information usually goes in it?
+  - How does a `POST` request differ from a `GET` request?
+  - What does the `Content-Type` header do?
+  - What do we mean when we say HTTP is stateless?
+  - What are some common HTTP response codes? How are they grouped together?
+  - What are cookies? What are they useful for?
+  - What's an XSS attack? How do we prevent it?
+  - What's a CSRF attack? How do we prevent it?
+  - What's a SQL injection attack? How do we prevent it?
   - Explain the basic structure of a MIME multipart message when used to transfer different content type parts. Provide a simple example.
   - How do we execute a series of AJAX calls in order?
   - How do we execute a series of AJAX calls and then run something else only after all of those calls have completed?
@@ -36,6 +44,8 @@
   // dynamically add another button to the page
   $( "html" ).append( "<button>Click Alert!</button>" );
   ```
+
+- HTTP
 
 - React
   - What is React? How is it different from other JS frameworks?

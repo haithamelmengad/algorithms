@@ -9,7 +9,7 @@ with the interviewer.
 While answering design questions you should cover:
 
 1. **User interaction flow:** Describe the main pages of your app. What actions
-  can users take on each page? How do users get from one page to another? 
+  can users take on each page? How do users get from one page to another?
 1. **Schema and query patterns:** Describe all your models. How to models connect
   to eachother? What queries do you need to run on your models?
 1. **System overview:** What components is your system going to contain? You'll most
@@ -23,15 +23,28 @@ Design a messaging app.
 ### Stage 1: Direct messages
 
 - Users login with username and password
-- Every user can message other users
+- Every user can message every other user
+- All conversations are 1-1
 - Users can find users by username
 - Messages are grouped by user
 
 ### Stage 2: Group chat
 
-- Users can message many users 
+- Users can message many users at the same time
+- Sending a message to a group, should send a message to  
+  every member of the group
+
+### Stage 3: Chat rooms
+
+- A chat room is like a group chat
+- Chat rooms can be made private, in which case the room is
+  invite-only.
+- Each chat room has one or more admins who can kick people
+  out of the room.
 
 ## Email filters
+
+TODO
 
 ## Multiplayer Poker
 
@@ -58,6 +71,17 @@ Go into how to represent a hand, game state, table state.
 
 - Some games are invite only
 
+## Team calendar app
+
+TODO
+
+## Find my friends
+
+TODO
+
+## E-commerce platform
+
+TODO
 
 ## Further reading
 
