@@ -84,7 +84,7 @@ Write a frontend to allow users to set and reset a timer.
 1. Add logic to make the start, pause and reset buttons work
 1. When a clock has finished, render a notificaiton on the page
 1. (Bonus) Add the ability to create and remove timers
-  - Allow multiple timers to be own simultaneously
+  - Allow multiple timers to run simultaneously
 1. (Bonus) use the browser media APIs to play a tone when a timer has completed
 
 ### (React) Build Tinder
