@@ -32,7 +32,7 @@ How do you do a sticky, inline-header with menu items?
 
 ### Autocomplete Box
 
-How would you make an "autocomplete" input that takes can filter through given items?
+How would you make an "autocomplete" input that can filter through given items?
 
 * access the input value
 * filter through a list of items
@@ -56,14 +56,17 @@ How would you make a collapsing sidebar?
 
 How do you make a realtime newsfeed
 
-* Pagination?
-* Realtime
-* as
+* Design HTML/CSS for a Facebook like news feed
+  - with a profile picture for each item, and the name of the person who posted it
+  - A post body containing: an image or text
+  - A list of likes
+  - A like button?
+* How would you do threaded comments in each item?
+* How would you load more items via AJAX when the page loads?
 
 ### Chat Window
 
-How would you make a realtime chat window
-
+How would you make a realtime chat window?
 
 
 ## Links and resources
