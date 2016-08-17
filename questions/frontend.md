@@ -9,6 +9,8 @@ Each question has multiple stages. Complete them one at a time. If you get stuck
 
 You are welcome to Google, but **don't copy paste code.**
 
+Don't use Bootstrap (or similar library).
+
 ## Questions
 
 ### General Layout
