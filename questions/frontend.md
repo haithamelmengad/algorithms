@@ -16,6 +16,7 @@ Guidelines:
 
 ### General Layout
 
+
 1. Center a red rectangle *horizontally* on a page? How many ways can you do this?
 1. Center a text that reads `I am centered` on a page.
 1. Center a red rectangle *horizontally and vertically* on a page?
@@ -36,6 +37,7 @@ How would you make an "autocomplete" input that can filter through given items?
 * filter through a list of items
 * render these onto the page
 * NO refreshing the page! this is a use-case for client-side rendering
+* (Bonus) load [this list of names](https://raw.githubusercontent.com/dominictarr/random-name/master/first-names.txt) into your autocomplete box
 
 ### Implement a spreadsheet
 
@@ -47,7 +49,11 @@ How would you make an "autocomplete" input that can filter through given items?
 
 ### Sidebar
 
-How would you make a collapsing sidebar?
+How would you make a spreadsheet similar to Excel or Google Sheets?
+
+* Must be able to support an arbitrary amount of data - 10 to 10k rows & columns
+* Use event bubbling for performance (or react)
+* Sorting
 
 1. Sidebar that contains arbitrary items on the left side of the page
 1. When collapsed sidebar turns into a button, can be expanded
@@ -55,8 +61,6 @@ How would you make a collapsing sidebar?
 2. (Bonus) Animate collapsing and expanding the sidebar
 
 ### Realtime Newsfeed
-
-How do you make a realtime newsfeed
 
 1. Design HTML/CSS for a Facebook like news feed
   - with a profile picture for each item, and the name of the person who posted it
@@ -68,6 +72,33 @@ How do you make a realtime newsfeed
 1. Add the ability to collapse comment threads i.e. hide all comments that are in response to a particular comment.
 1. (Bonus) Display more news feed items when the user scrolls.
 
+### (React) Countdown Timer
+
+Write a frontend to allow users to set and reset a timer.
+
+1. Show a countdown clock. This clock must run down in real-time.
+  - with hour, minutes and seconds
+  - a name
+  - a start, pause, and reset button
+1. Allow the user to input a time for the countdown
+1. Add logic to make the start, pause and reset buttons work
+1. When a clock has finished, render a notification on the page
+1. (Bonus) Add the ability to create and remove timers
+  - Allow multiple timers to run simultaneously
+1. (Bonus) Use the browser media APIs to play a tone when a timer has completed
+
+### (React) Build Tinder
+
+1. Create a card interface
+  - A profile picture
+  - Name, age, bio
+  - Like and unlike buttons
+  - the card should be centered on the screen
+1. Add logic that will hide the current card and show the next card when the like or unlike button is pressed
+1. Allow these cards to be 'swiped' left or right
+1. (Bonus)Aanimate the swiping by making the card rotate slightly and fade away
+
 ## Links and resources
 
 1. http://howtocenterincss.com
+1. https://github.com/h5bp/Front-end-Developer-Interview-Questions
