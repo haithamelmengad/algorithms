@@ -3,13 +3,14 @@
 Use Codepen to implement these tasks purely on the client side. Wherever necessary you can use dummy data to fill out the contents.
 These exercises are meant to test your ability to write HTML/CSS/JavaScript purely in the Browser. 
 
-Don't worry about backend integration.
-
 Each question has multiple stages. Complete them one at a time. If you get stuck, you can skip to the next question.
 
-You are welcome to Google, but **don't copy paste code.**
+Guidelines:
 
-Don't use Bootstrap (or similar library).
+- Don't worry about backend integration.
+- You are welcome to Google, but **don't copy paste code.**
+- Try to implement these solutions using pure HTML/CSS. Don't use Bootstrap (or similar library).
+- You can use jQuery or React.
 
 ## Questions
 
