@@ -5,15 +5,17 @@ These exercises are meant to test your ability to write HTML/CSS/JavaScript pure
 
 Don't worry about backend integration.
 
+Each question 
+
 ## Questions
 
 ### General Layout
 
-1. What's the difference between a block-level and text element?
-1. What are different techniques for __horizontally__ centering a block-level element?
-1. What about centering a text element?
-1. How do you __vertically__ & __horizontally__ center a block-level element?
-1. How do you put block-level items side-by-side?
+1. Center a red rectangle *horizontally* on a page? How many ways can you do this?
+1. Center a text that reads `I am centered` on a page.
+1. Center a red rectangle *horizontally and vertically* on a page?
+1. Display 8 red boxes of different heights and widths side by side. Make sure they
+  have some spacing around them.
 
 ### Sticky Header
 
