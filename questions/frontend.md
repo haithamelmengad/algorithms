@@ -21,9 +21,6 @@ Don't worry about backend integration.
 2. Make header row sticky, that is, it stays visible when you scroll down.
 3. Add expandable drop-down menu items to the header.
 
-* Inline-menu use a side-by-side divs or horizontal ul's
-* to make it "sticky", always stays visible at the top of the page no matter how much you scroll down
-
 ### Autocomplete Box
 
 How would you make an "autocomplete" input that can filter through given items?
@@ -47,7 +44,8 @@ How would you make a collapsing sidebar?
 
 1. Sidebar that contains arbitrary items on the left side of the page
 1. When collapsed sidebar turns into a button, can be expanded
-1. Responsive queries to auto-collapse sidebar on mobile
+1. (Bonus) Use media queries to auto-collapse sidebar on mobile
+2. (Bonus) Animate collapsing and expanding the sidebar
 
 ### Realtime Newsfeed
 
@@ -59,8 +57,7 @@ How do you make a realtime newsfeed
   - A list of likes
   - A like button?
 1. How would you do threaded comments in each item?
-1. How would you load more items via AJAX when the page loads?
-
+1. (Bonus) Display more news feed items when the user scrolls.
 
 ## Links and resources
 
