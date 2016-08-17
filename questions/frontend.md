@@ -36,7 +36,7 @@ How would you make an "autocomplete" input that can filter through given items?
 
 ### Implement a spreadsheet
 
-1. Display a grid of editable cells
+1. Display a grid of editable cells that takes up the whole page with no margins
   - Column headers should have letters (A, B, C)
   - Row headers should have numbers (1, 2, 3, 4)
 1. Implement insert empty row/column functionality
