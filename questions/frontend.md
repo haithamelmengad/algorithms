@@ -1,55 +1,52 @@
 # Frontend Interview Questions
 
+Use Codepen to implement these tasks purely on the client side. Wherever necessary you can use dummy data to fill out the contents.
+These exercises are meant to test your ability to write HTML/CSS/JavaScript purely in the Browser. 
+
+Each question has multiple stages. Complete them one at a time. If you get stuck, you can skip to the next question.
+
+Guidelines:
+
+- Don't worry about backend integration.
+- You are welcome to Google, but **don't copy paste code.**
+- Try to implement these solutions using pure HTML/CSS. Don't use Bootstrap (or similar library).
+- You can use jQuery or React.
+
 ## Questions
 
 ### General Layout
 
-1. What's the difference between a block-level and text element?
-1. What are different techniques for __horizontally__ centering a block-level element?
-  - set width, margin: 0 auto;
-  - display: table on parent, table-cell on thing to center
-  - flex
-  - transform
-1. What about centering a text element?
-  - text-align: center
-1. How do you __vertically__ & __horizontally__ center a block-level element?
-  - tables
-  - flex
-  - transform
-  - [shameless plug](http://codepen.io/joshpaulchan/pen/PzLmRb?editors=0100)
-1. How do you put block-level items side-by-side?
-  - Float
-  - display: inline-block (iffy)
-  - Flex
+
+1. Center a red rectangle *horizontally* on a page? How many ways can you do this?
+1. Center a text that reads `I am centered` on a page.
+1. Center a red rectangle *horizontally and vertically* on a page?
+1. Display 8 red boxes of different heights and widths side by side. Make sure they
+  have some spacing around them.
 
 ### Sticky Header
 
-How do you do a sticky, inline-header with menu items?
-
-* inline-menu use a side-by-side divs or horizontal ul's
-* to make it "sticky", use position: absolute or static or fixed
-
-[a solution](http://codepen.io/joshpaulchan/pen/yJwbmQ?editors=0100)
+1. Display a header row at the top of the page.
+2. Make header row sticky, that is, it stays visible when you scroll down.
+3. Add expandable drop-down menu items to the header.
 
 ### Autocomplete Box
 
-How would you make an "autocomplete" input that takes can filter through given items?
+How would you make an "autocomplete" input that can filter through given items?
 
 * access the input value
 * filter through a list of items
 * render these onto the page
 * NO refreshing the page! this is a use-case for client-side rendering
 
-[solution using jq](http://codepen.io/joshpaulchan/pen/mEowjX?editors=0010)
+### Implement a spreadsheet
 
-### Make a Resizeable Grid
+1. Display a grid of editable cells that takes up the whole page with no margins
+  - Column headers should have letters (A, B, C)
+  - Row headers should have numbers (1, 2, 3, 4)
+1. Implement insert empty row/column functionality
+2. (Bonus) Implement drag-and-drop re-ordering of rows/columns
 
-How do you make a grid that can resize?
-
-* Inline elements
-* Media queries
-
-### Make a spreadsheet
+### Sidebar
 
 How would you make a spreadsheet similar to Excel or Google Sheets?
 
@@ -57,19 +54,22 @@ How would you make a spreadsheet similar to Excel or Google Sheets?
 * Use event bubbling for performance (or react)
 * Sorting
 
+1. Sidebar that contains arbitrary items on the left side of the page
+1. When collapsed sidebar turns into a button, can be expanded
+1. (Bonus) Use media queries to auto-collapse sidebar on mobile
+2. (Bonus) Animate collapsing and expanding the sidebar
+
 ### Realtime Newsfeed
 
-How do you make a realtime newsfeed
-
-* Pagination?
-* Realtime
-* as
-
-### Chat Window
-
-How would you make a realtime chat window
-
-
+1. Design HTML/CSS for a Facebook like news feed
+  - with a profile picture for each item, and the name of the person who posted it
+  - A post body containing: an image or text
+  - A list of likes
+  - A like button?
+1. Add ability to post post comments on feed items.
+1. Add ability to respond to comments in items. If a comment is a response to a previous comment, it should be indented. So if a comment is a response to a response to a response, it should be indented 3 levels.
+1. Add the ability to collapse comment threads i.e. hide all comments that are in response to a particular comment.
+1. (Bonus) Display more news feed items when the user scrolls.
 
 ## Links and resources
 
