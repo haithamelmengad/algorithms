@@ -60,7 +60,9 @@ How do you make a realtime newsfeed
   - A post body containing: an image or text
   - A list of likes
   - A like button?
-1. How would you do threaded comments in each item?
+1. Add ability to post post comments on feed items.
+1. Add ability to respond to comments in items. If a comment is a response to a previous comment, it should be indented. So if a comment is a response to a response to a response, it should be indented 3 levels.
+1. Add the ability to collapse comment threads i.e. hide all comments that are in response to a particular comment.
 1. (Bonus) Display more news feed items when the user scrolls.
 
 ## Links and resources
