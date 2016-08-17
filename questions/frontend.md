@@ -82,10 +82,10 @@ Write a frontend to allow users to set and reset a timer.
   - a start, pause, and reset button
 1. Allow the user to input a time for the countdown
 1. Add logic to make the start, pause and reset buttons work
-1. When a clock has finished, render a notificaiton on the page
+1. When a clock has finished, render a notification on the page
 1. (Bonus) Add the ability to create and remove timers
   - Allow multiple timers to run simultaneously
-1. (Bonus) use the browser media APIs to play a tone when a timer has completed
+1. (Bonus) Use the browser media APIs to play a tone when a timer has completed
 
 ### (React) Build Tinder
 
@@ -96,22 +96,7 @@ Write a frontend to allow users to set and reset a timer.
   - the card should be centered on the screen
 1. Add logic that will hide the current card and show the next card when the like or unlike button is pressed
 1. Allow these cards to be 'swiped' left or right
-1. (Bonus) animate the swiping by making the card rotate slightly and fade away
-
-### (React) Realtime Stock Ticker Chart
-
-Design a frontend for a day trading application.
-
-1. Make a header with:
-  - an input bar to show and select what stock you are viewing
-  - this is a dummy header, aesthetic use only
-1. Render a full-screen chart on your page that can plot arbitrary data
-  - Plot points and lines from point to point
-  - Draw the intervals of the x/y axis
-  - Make sure the most recent point is in the middle of the screen
-  - Generate your own dummy data
-1. Make your application "real-time" by periodically plotting a new point onto your chart ever so often.
-1. (Bonus) allow the user to change the scale of the graph. He/she must be able to input a new min/max on the X (time) axis, which will re-render the chart
+1. (Bonus)Aanimate the swiping by making the card rotate slightly and fade away
 
 ## Links and resources
 
