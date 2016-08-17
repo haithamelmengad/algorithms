@@ -96,7 +96,7 @@ Write a frontend to allow users to set and reset a timer.
   - the card should be centered on the screen
 1. Add logic that will hide the current card and show the next card when the like or unlike button is pressed
 1. Allow these cards to be 'swiped' left or right
-1. (Bonus)Aanimate the swiping by making the card rotate slightly and fade away
+1. (Bonus) Animate the swiping by making the card rotate slightly and fade away
 
 ## Links and resources
 
