@@ -5,7 +5,9 @@ These exercises are meant to test your ability to write HTML/CSS/JavaScript pure
 
 Don't worry about backend integration.
 
-Each question 
+Each question has multiple stages. Complete them one at a time. If you get stuck, you can skip to the next question.
+
+You are welcome to Google, but **don't copy paste code.**
 
 ## Questions
 
