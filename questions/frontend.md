@@ -20,6 +20,7 @@
 1. How do you put block-level items side-by-side?
   - Float
   - display: inline-block (iffy)
+  - Flex
 
 ### Sticky Header
 
@@ -50,7 +51,11 @@ How do you make a grid that can resize?
 
 ### Make a spreadsheet
 
-How would you make a collapsing sidebar?
+How would you make a spreadsheet similar to Excel or Google Sheets?
+
+* Must be able to support an arbitrary amount of data - 10 to 10k rows & columns
+* Use event bubbling for performance (or react)
+* Sorting
 
 ### Realtime Newsfeed
 
@@ -69,3 +74,4 @@ How would you make a realtime chat window
 ## Links and resources
 
 1. http://howtocenterincss.com
+1. https://github.com/h5bp/Front-end-Developer-Interview-Questions
