@@ -37,6 +37,7 @@ How would you make an "autocomplete" input that can filter through given items?
 * filter through a list of items
 * render these onto the page
 * NO refreshing the page! this is a use-case for client-side rendering
+* (Bonus) load [this list of names](https://raw.githubusercontent.com/dominictarr/random-name/master/first-names.txt) into your autocomplete box
 
 ### Implement a spreadsheet
 
@@ -70,6 +71,47 @@ How would you make a spreadsheet similar to Excel or Google Sheets?
 1. Add ability to respond to comments in items. If a comment is a response to a previous comment, it should be indented. So if a comment is a response to a response to a response, it should be indented 3 levels.
 1. Add the ability to collapse comment threads i.e. hide all comments that are in response to a particular comment.
 1. (Bonus) Display more news feed items when the user scrolls.
+
+### (React) Countdown Timer
+
+Write a frontend to allow users to set and reset a timer.
+
+1. Show a countdown clock. This clock must run down in real-time.
+  - with hour, minutes and seconds
+  - a name
+  - a start, pause, and reset button
+1. Allow the user to input a time for the countdown
+1. Add logic to make the start, pause and reset buttons work
+1. When a clock has finished, render a notificaiton on the page
+1. (Bonus) Add the ability to create and remove timers
+  - Allow multiple timers to be own simultaneously
+1. (Bonus) use the browser media APIs to play a tone when a timer has completed
+
+### (React) Build Tinder
+
+1. Create a card interface
+  - A profile picture
+  - Name, age, bio
+  - Like and unlike buttons
+  - the card should be centered on the screen
+1. Add logic that will hide the current card and show the next card when the like or unlike button is pressed
+1. Allow these cards to be 'swiped' left or right
+1. (Bonus) animate the swiping by making the card rotate slightly and fade away
+
+### (React) Realtime Stock Ticker Chart
+
+Design a frontend for a day trading application.
+
+1. Make a header with:
+  - an input bar to show and select what stock you are viewing
+  - this is a dummy header, aesthetic use only
+1. Render a full-screen chart on your page that can plot arbitrary data
+  - Plot points and lines from point to point
+  - Draw the intervals of the x/y axis
+  - Make sure the most recent point is in the middle of the screen
+  - Generate your own dummy data
+1. Make your application "real-time" by periodically plotting a new point onto your chart ever so often.
+1. (Bonus) allow the user to change the scale of the graph. He/she must be able to input a new min/max on the X (time) axis, which will re-render the chart
 
 ## Links and resources
 
