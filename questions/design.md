@@ -44,7 +44,12 @@ Design a messaging app.
 
 ## Email filters
 
-TODO
+Design an email filtering system.
+
+- What kind of email filters would you have?
+- What sort of actions can people perform on filtered emails?
+- How would you represent email filters?
+- What happens when an email matches multiple filters?
 
 ## Multiplayer Poker
 
@@ -67,21 +72,24 @@ Go into how to represent a hand, game state, table state.
 - Players can see all active games
 - Players can spectate and join games
 
-### Stage 2: Invite only games
-
-- Some games are invite only
-
 ## Team calendar app
 
-TODO
+Implement a calendaring app for people working in teams.
 
-## Find my friends
+### Stage 1: One team
 
-TODO
+- Every user belongs to the same team
+- Everyone can see each others' calendars
 
-## E-commerce platform
+### Stage 2: Multiple teams
 
-TODO
+- Each person belongs to a single team
+- Each team has a team admin that can add more people to the team
+- Calendars are only visible to people on the same team.
+
+### Stage 3: Recurring events
+
+- How would you implement recurring events?
 
 ## Further reading
 
