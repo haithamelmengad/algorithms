@@ -88,6 +88,7 @@ $( "html" ).append( "<button>Click Alert!</button>" );
 1. What is React? How is it different from other JS frameworks?
 1. Is React an MVC framework?
 1. What problem was React created to solve? How does it do this?
+1. What's the "shadow DOM?" Why does it exist?
 1. What’s the difference between props and state?
 1. What happens during the lifecycle of a React component?
 1. What causes a component to re-render?
