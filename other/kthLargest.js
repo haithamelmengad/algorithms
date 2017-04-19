@@ -22,6 +22,7 @@ function kthLargest(numbers, k) {
 
 var {partition} = require('./partition');
 // This is the O(n) solution
+// n + n/2 + n/4 + n/8 ... + 1
 function kthLargestPartition(numbers, k) {
   k = numbers.length - k - 1;
   function helper(left, right) {
