@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "eslint": "^3.0.1"
+  },
+  "scripts": {
+    "test": "jasmine-node --matchall *.js"
+  },
+  "dependencies": {
+    "heap": "^0.2.6",
+    "jasmine-node": "^1.14.5",
+    "underscore": "^1.8.3"
+  }
+}
