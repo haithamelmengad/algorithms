@@ -1,51 +1,62 @@
 "use strict";
 var _ = require('underscore');
-// Adapted from https://khan4019.github.io/front-end-Interview-Questions/sort.html#quickSort
-
+// Adapted from https://gist.github.com/KenCorbettJr/4691882
 function swap(array, i, j) {
-  // console.log(array.join(' , '));
-  // console.log(array[i], array[j]);
   var tmp = array[i];
   array[i] = array[j];
   array[j] = tmp;
 }
 
-// function partition(arr, left, right){
-//   var pivot = left;
-//   var pivotValue = arr[pivot];
-//   var wall = left + 1;
-//
-//   for (var low = left + 1; low < right; low++) {
-//     if (arr[low] < pivotValue) {
-//       swap(arr, low, wall);
-//       wall++;
-//     }
-//   }
-//   console.log(pivot, wall, arr);
-//   swap(arr, pivot, wall);
-//
-//   return wall;
-// }
-function partition(arr, left, right) {
-  var pivot = left;
-  var pivotValue = arr[pivot];
-  var low = left + 1;
-  var high = right;
+function partition(array, left, right) {
+  var storeIndex = left,
+    pivot = left,
+    pivotValue = array[pivot];
 
-  while (low <= high){
-    while (low < right && arr[low] < pivotValue) {
-      low++;
-    }
-    while (low <= high && arr[high] >= pivot) {
-      high--;
-    }
-    if (low < high) {
-      swap(arr, low, high);
+  // put the pivot on the right
+  swap(array, pivot, right);
+
+  // go through the rest
+  for(var v = left; v < right; v++) {
+
+    // if the value is less than the pivot's
+    // value put it to the left of the pivot
+    // point and move the pivot point along one
+    if(array[v] < pivotValue) {
+      swap(array, v, storeIndex);
+      storeIndex++;
     }
   }
 
-  swap(arr, pivot, high);
-  return high;
+  // finally put the pivot in the correct place
+  swap(array, right, storeIndex);
+
+  return storeIndex;
+}
+
+function sort(array, left, right) {
+  var newPivot = null;
+
+  if (typeof left !== 'number') {
+    left = 0;
+  }
+
+  if (typeof right !== 'number') {
+    right = array.length - 1;
+  }
+
+  // effectively set our base
+  // case here. When left == right
+  // we'll stop
+  if(left < right) {
+    // pick a pivot between left and right
+    // and update it once we've partitioned
+    // the array to values < than or > than
+    // the pivot value
+    newPivot  = partition(array, left, right);
+    // recursively sort to the left and right
+    sort(array, left, newPivot - 1);
+    sort(array, newPivot + 1, right);
+  }
 }
 
 describe("partition()", function() {
@@ -60,26 +71,24 @@ describe("partition()", function() {
       throw new Error('Failed');
     }
   }
-  it("my arr", function() {
-    var arr = [3, 1, 2];
-    test(arr);
-    // test([183530,
-    //   57170,
-    //   261227,
-    //   -801878,
-    //   -345601,
-    //   -883866,
-    //   -147274,
-    //   -471573,
-    //   -458375,
-    //   -708101]);
-  });
   it("randomized dataset", function() {
-    // return
-    _.range(10000).forEach(() => {
-      var arr = _.range(10).map(() => _.random(-1e6, 1e6));
+    _.range(1000).forEach(() => {
+      var arr = _.range(1000).map(() => _.random(-1e6, 1e6));
       test(arr);
     });
+  });
+});
+
+describe("sort()", function() {
+  function test(arr) {
+    var sorted = _.sortBy(arr);
+    sort(arr);
+    expect(arr).toEqual(sorted);
+  }
+
+  it("randomized dataset", function() {
+    var arr = _.range(10000).map(() => _.random(-1e6, 1e6));
+    test(arr);
   });
 });
 
