@@ -20,6 +20,32 @@ function kthLargest(numbers, k) {
   return heap.peek();
 }
 
+function swap(array, i, j) {
+  var tmp = array[i];
+  array[i] = array[j];
+  array[j] = tmp;
+}
+
+function partition(arr, pivot, left, right){
+  var pivotValue = arr[pivot],
+    partitionIndex = left;
+  var low = left + 1;
+  var high = right;
+
+  while (low < high) {
+    if (arr[low] <= pivotValue) {
+      low++;
+    } else if (arr[high] > pivotValue) {
+      high++;
+    } else {
+      swap(arr, low, high);
+    }
+  }
+  swap(arr, pivot, low);
+
+  return partitionIndex;
+}
+
 describe("kthLargest()", function() {
   it("kthLargest([5, -6, 2, 14], 0) -> 14", function() {
     expect(kthLargest([5, -6, 2, 14], 0) ).toBe(14);
