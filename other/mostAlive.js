@@ -10,12 +10,12 @@ var _ = require('underscore');
 function mostAlive(people) {
   var maxYear;
   var maxPeople;
-  for (var i = 1900; i <= 2000; i++) {
+  for (var year = 1900; year <= 2000; year++) {
     var alive = people.map(person => (
-      (person.birth <= i && i <= person.death) ? 1 : 0)
+      (person.birth <= year && year <= person.death) ? 1 : 0)
     ).reduce((a, b) => (a + b));
     if (! maxYear || alive > maxPeople) {
-      maxYear = i;
+      maxYear = year;
       maxPeople = alive;
     }
   }
