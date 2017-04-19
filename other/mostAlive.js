@@ -54,15 +54,4 @@ function mostAliveSorted(people) {
   return maxYear;
 }
 
-var people = [
-  {birth: 1921, death: 1922},
-  {birth: 1901, death: 1924},
-  {birth: 1902, death: 1950},
-  {birth: 1920, death: 1960},
-  {birth: 1950, death: 1985},
-  {birth: 1980, death: 2000},
-  {birth: 1902, death: 1955}
-];
-
-console.log(mostAlive(people));
-console.log(mostAliveSorted(people));
+module.exports = {mostAlive, mostAliveSorted};
