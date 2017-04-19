@@ -3,7 +3,7 @@
     "eslint": "^3.0.1"
   },
   "scripts": {
-    "test": "jasmine-node --matchall *.js"
+    "test": "jasmine-node ."
   },
   "dependencies": {
     "heap": "^0.2.6",
