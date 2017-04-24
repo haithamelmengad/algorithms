@@ -1,6 +1,6 @@
-# Design interview questions
+# Systems design interview questions
 
-## Design interview tips
+## Systems design interview tips
 
 When doing design questions in person be sure to **ask a lot of questions**
 before jumping in to writing a solution. Treat this interview as a conversation
