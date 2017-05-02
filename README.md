@@ -1,5 +1,6 @@
 # Interview Prep Exercises
 
+1. [Stacks, Linked Lists, Queues](stack-linked-lists/)
 1. [Sorting](sorting/)
 1. [Trees](trees/)
 1. [Data Structures](data_structures/)
