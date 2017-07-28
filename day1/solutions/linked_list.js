@@ -27,45 +27,84 @@ class LinkedList {
   // Adds a new node containing value to the front of llist
   // time: O(1)
   addFront(value) {
-    // YOUR CODE HERE
+    let newNode = new Node(value);
+    newNode.next = this.head;
+    this.head = newNode;
   }
 
   // Adds a new node containing value to the back of llist
   // time: O(n), where n is the length of llist
   addBack(value) {
-    // YOUR CODE HERE
+    let newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+    } else {
+      let temp = this.head;
+      while (temp.next) {
+        temp = temp.next;
+      }
+      temp.next = newNode;
+    }
   }
 
   // Removes the node at the front of llist and returns the value of the
   // removed node. If llist is empty, return null.
   // time: O(1)
   removeFront() {
-    // YOUR CODE HERE
+    if (!this.head) {
+      return null;
+    }
+    let backup = this.head;
+    this.head = this.head.next;
+    return backup.value;
   }
 
   // Removes the node at the back of llist and returns the value of the removed
   // node. If llist is empty, return null.
   // time: O(n), where n is the length of llist
   removeBack() {
-    // YOUR CODE HERE
+    if (!this.head) {
+      return null;
+    }
+    let backup = this.head;
+    if (!backup.next) { // head is only node
+      this.head = null;
+      return backup.value;
+    }
+    while (backup.next && backup.next.next) {
+      backup = backup.next;
+    }
+    let result = backup.next;
+    backup.next = null;
+    return result.value;
   }
 
   // Returns true if llist is empty (has no nodes)
   // time: O(1)
   isEmpty() {
-    // YOUR CODE HERE
+    return this.head === null;
   }
 
   // Returns the number of nodes in llist
   // time: O(n), where n is the length of llist
   length() {
-    // YOUR CODE HERE
+    let len = 0;
+    let temp = this.head;
+    while (temp) {
+      len++;
+      temp = temp.next;
+    }
+    return len;
   }
 
   // Squares each item in llist
   // time: O(n), where n is the length of llist
   sqr() {
-    // YOUR CODE HERE
+    let temp = this.head;
+    while (temp) {
+      temp.value *= temp.value;
+      temp = temp.next;
+    }
   }
 
   // Questions to think about:
@@ -78,14 +117,34 @@ class LinkedList {
   // requires: llist to be a sorted list
   // time: O(n), where n is the length of sorted list
   insertToSorted(value) {
-    // YOUR CODE HERE
+    if (!this.head || value < this.head.value) {
+      this.addFront(value);
+    } else {
+      this.insertNodes(value, this.head);
+    }
+  }
+
+  insertNodes(value, node) {
+    if (node.next && value > node.next.value) {
+      this.insertNodes(value, node.next);
+    } else {
+      let newNode = new Node(value);
+      newNode.next = node.next;
+      node.next = newNode;
+    }
   }
 
   // Bonus: Returns a NEW, REVERSED linked list based on llist. Note that the
   // nodes must be new copies as well.
   // time: O(n), where n is the length of llist
   reverse() {
-    // YOUR CODE HERE
+    let ll = new LinkedList();
+    let temp = this.head;
+    while (temp) {
+      ll.addFront(temp.value);
+      temp = temp.next;
+    }
+    return ll;
   }
 }
 
