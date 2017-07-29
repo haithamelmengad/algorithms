@@ -41,7 +41,7 @@ class ArrayBasedStack {
 
   // removes the top element of the stack and returns that value.
   // returns null if the stack is empty.
-  // time: O(1)
+  // time: O(n)
   pop() {
     if (this.isEmpty()) {
       return null;
