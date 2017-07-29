@@ -6,24 +6,24 @@ const LinkedList = require('./solutions/linked_list');
 // STACKS
 
 // A Stack is a data structure that keeps track of items and allows them to be
-// processed (i.e. removed from the stack) in the reverse order that they have
+// processed (i.e. removed frmo the stack) in the reverse order that they have
 // been added.
 // This ordering is known as LIFO (Last-in-first-out).
 
-// JavaScript arrays are good (i.e. fast) for stacks. Here, we will assume that
-// the top of the stack refers to index 0 of the array.
+// JavaScript arrays are good (i.e. fast) for stacks. push() and pop() remove
+// items from the end of an array.
 
 // ex.
 //    var array = [];
-//    array.unshift(1);
-//    array.unshift(2);
-//    array.unshift(3);
-//    array.shift(); // -> 3, note reverse order
-//    array.shift(); // -> 2
-//    array.shift(); // -> 1
+//    array.push(1);
+//    array.push(2);
+//    array.push(3);
+//    array.pop(); // -> 3, note reverse order
+//    array.pop(); // -> 2
+//    array.pop(); // -> 1
 
-// Below you will find a barebone implementation of a stack using arrays.
-// You will need to build another implementation of a stack using
+// Below you will find a barebone implementation of a stack using arrays for
+// you. You will need to build another implementation of a stack using
 // linked lists. Try to do it within the given time complexity.
 
 // Implementation of a stack using arrays
@@ -75,26 +75,33 @@ class Stack {
   // adds an element with value onto the top of the stack
   // time: O(1)
   push(value) {
-    // YOUR CODE HERE
+    this.data.addFront(value);
   }
 
   // removes the top element of the stack and returns that value.
   // returns null if the stack is empty.
   // time: O(1)
   pop() {
-    // YOUR CODE HERE
+    if (this.isEmpty()) {
+      return null;
+    }
+    let res = this.data.removeFront();
+    return res;
   }
 
   // returns true if the stack is empty, and false otherwise
   // time: O(1)
   isEmpty() {
-    // YOUR CODE HERE
+    return this.data.isEmpty();
   }
 
   // returns the top element of the stack. returns null if the stack is empty
   // time: O(1)
   top() {
-    // YOUR CODE HERE
+    if (this.isEmpty()) {
+      return null;
+    }
+    return this.data.head.value;
   }
 }
 
