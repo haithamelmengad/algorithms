@@ -29,7 +29,7 @@ describe('Stack', () => {
   });
 
   // adds an element with value onto the top of the stack
-  // time: O(1)
+  // time: O(1) for Linked List-based and O(n) for Array-based
   // push(value) { }
   describe('push()', () => {
     it('contains the number of items added', () => {
@@ -52,7 +52,7 @@ describe('Stack', () => {
   });
 
   // removes the top element of the stack and returns that value
-  // time: O(1)
+  // time: O(1) for Linked List-based and O(n) for Array-based
   // pop() { }
   describe('pop()', () => {
     it('returns null for an empty stack', () => {
