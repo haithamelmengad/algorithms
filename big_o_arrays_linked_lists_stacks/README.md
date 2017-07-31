@@ -1,4 +1,4 @@
-## Day 1 - Interview Prep
+## Interview Prep: Big O notation, Arrays, Linked Lists, and Stacks
 
 Concepts: **Big O notation, Arrays, Linked Lists, and Stacks**
 
