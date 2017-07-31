@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "jasmine": "^2.6.0"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "name": "day1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
