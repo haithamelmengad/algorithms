@@ -19,6 +19,9 @@ class Node {
 }
 
 // A Linked List (llist). It contains a reference to the head node.
+// Note that this linked list implementation is slightly different 
+// from the one in the lecture slides. Here, we do not have a reference 
+// to the tail node.
 class LinkedList {
   constructor() {
     this.head = null;
