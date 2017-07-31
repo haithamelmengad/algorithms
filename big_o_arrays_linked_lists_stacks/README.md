@@ -54,7 +54,6 @@ For these questions, use JavaScript Arrays as Stacks.
 ### Part 3: Linked Lists
 
 1. [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/tabs/description)
-1. [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/tabs/description/)
 1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/tabs/description) (Try to do it one pass)
 
 If you're done with all of these, feel free to head to the [bonus](#bonus-1) section. 😄🎉
