@@ -20,7 +20,7 @@ Hello everyone! We'll split today's schedule into 3 different main sections (exc
 
 Before moving on, do `npm install -g jasmine`.
 
-1. Singly Linked Lists: `linked_list.js`. 
+1. Singly Linked Lists: `linked_list.js`.
 	> Run `jasmine linked_list.spec.js` to test.
 
 2. Stacks: `stack.js`.
@@ -71,9 +71,9 @@ Ranked from easiest to hardest:
 
 Also, here are a few questions to try out. Note that these are actual in-person interview questions. There are no tests for these questions. Feel free to talk to a TA about your approach.
 
-1. **Quora**: Given a array with numbers which are increasing in beginning and decreasing in the end, find the maximum number in O(log n). examples: [1,2,3], [1,2,3,4,5,3,2], [4,2,1]
+1. **Quora**: Given a array with numbers which are increasing in beginning and decreasing in the end, find the maximum number in O(log n). Examples of arrays are [1,2,3], [1,2,3,4,5,3,2], and [4,2,1].
 1. **Wish**: Given an array of unique integers, return list of permutations.
 2. **Wish**: Given an array of unique integers, return list of all subsets.
 1. **Google**: Given an array and a value `x`, remove all instances of that `x` **in place** and return the new length. The order of elements can be changed.
-1. **Google**: Check if a number is rotatable 180 degree.
-1. **Bloomberg**: Given an array and the number `k`, return the `k` smallest elements in the array.
+1. **Google**: Check if a number is rotatable 180 degrees, i.e. the same after rotation. Examples are rotations of 916 and 69. (Think about digits 0, 1, 6, 8, and 9.)
+1. **Bloomberg**: Given an array and the number `k`, return the `k` smallest elements in the array. (Note that k is not referring to the position (k-th smallest), but to the total number of elements instead.)
