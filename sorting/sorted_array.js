@@ -1,85 +1,47 @@
 "use strict";
 
-var sortedArray = {};
+var sortedArray = {}
 
-// Write a function that takes an array, and returns true if and only if
-// the array is already sorted in increasing order.
+// Write a function that takes a sorted array of numbers and a number
+// to locate and returns the index where that number can be found
+// (or -1 if the number is not present).
 //
-// ex. sortedArray.isSorted([]) -> true
-// ex. sortedArray.isSorted([1]) -> true
-// ex. sortedArray.isSorted([-1]) -> true
-// ex. sortedArray.isSorted([0, 1]) -> true
-// ex. sortedArray.isSorted([11, 1]) -> false
-// ex. sortedArray.isSorted([0, 999]) -> true
-// ex. sortedArray.isSorted([-12, 2, 3, 6, 10]) -> true
-// ex. sortedArray.isSorted([-12, 3, 6, 10, 2]) -> false
-sortedArray.isSorted = function(array) {
+// Use Binary Search to solve this problem.
+//
+// Expected runtime: O(log(n))
+//
+// ex. sortedArray.binarySearch([], 3) -> -1
+// ex. sortedArray.binarySearch([1,2,3], 1) -> 0
+// ex. sortedArray.binarySearch([1,4,5,8], 5) -> 2
+// ex. sortedArray.binarySearch([2,5,6,8,10,11], 11) -> 5
+// ex. sortedArray.binarySearch([2,5,6,8,10,11], 1) -> -1
+sortedArray.binarySearch = function(array, val) {
   // YOUR CODE HERE
 }
 
-// Write a function that merges two sorted arrays and
-// returns a new sorted array.
+// Write a function that takes an array of numbers and returns
+// a new array with the same items sorted in increasing order.
 //
-// ex. sortedArray.mergeArrays([], []) -> []
-// ex. sortedArray.mergeArrays([1, 2], []) -> [1, 2]
-// ex. sortedArray.mergeArrays([], [1, 2]) -> [1, 2]
-// ex. sortedArray.mergeArrays([1, 3], [2]) -> [1, 2, 3]
-// ex. sortedArray.mergeArrays([1, 10], [2, 3, 11]) -> [1, 2, 3, 10, 11]
-// ex. sortedArray.mergeArrays([1, 2, 9, 10, 12], [2, 3, 11]) -> [1, 2, 2, 3, 9, 10, 11, 12]
-sortedArray.mergeArrays = function(array1, array2) {
+// Use either Bubble Sort or Selection Sort to solve this problem.
+//
+// Expected runtime: O(n^2)
+//
+// ex. sortedArray.naiveSort([]) -> []
+// ex. sortedArray.naiveSort([1,2,3]) -> [1,2,3]
+// ex. sortedArray.naiveSort([2,2,2]) -> [2,2,2]
+// ex. sortedArray.naiveSort([3,2,1,2,4]) -> [1,2,2,3,4]
+// ex. sortedArray.naiveSort([3, 2, 1]) -> [1, 2, 3]
+// ex. sortedArray.naiveSort([3, 2, 2, 1]) -> [1, 2, 2, 3]
+sortedArray.naiveSort = function(array) {
   // YOUR CODE HERE
 }
 
-
-// Write a function that finds the index of an item in a given sorted array.
-// Return -1 if item is not found.
+// Write a function that takes an array of numbers and returns
+// a new array with the same items sorted in increasing order.
 //
-// This function should use a binary search to find the item.
+// Use Merge Sort to solve this problem.
 //
-// ex. sortedArray.indexOf([], 1) -> -1
-// ex. sortedArray.indexOf([1], 1) -> 0
-// ex. sortedArray.indexOf([1], 2) -> -1
-// ex. sortedArray.indexOf([0, 1, 2, 3, 4, 6, 7], 4) -> 4
-// ex. sortedArray.indexOf([0, 1, 2, 3, 4, 6, 7], 5) -> -1
-sortedArray.indexOf = function(sortedArray, item) {
-  // YOUR CODE HERE
-}
-
-// Write a function that takes a sorted array and returns a new
-// array with all the duplicate items removed.
-//
-// In a sorted array duplicate items will be adjacent, you can
-// use this to your advantage to make a single run through the data
-// detecting sequences of identical items.
-//
-// ex. sortedArray.removeDuplicates([]) -> []
-// ex. sortedArray.removeDuplicates([1]) -> [1]
-// ex. sortedArray.removeDuplicates([1, 1, 1, 1]) -> [1]
-// ex. sortedArray.removeDuplicates([0, 1, 1, 1, 1, 4, 5]) -> [0, 1, 4, 5]
-// ex. sortedArray.removeDuplicates([-1, 0, 1, 1, 3, 5, 5, 5, 12, 13, 13]) -> [-1, 0, 1, 3, 5, 12, 13]
-sortedArray.removeDuplicates = function(sortedArray) {
-  // YOUR CODE HERE
-}
-
-// Write a function that takes an array and returns a new array with items
-// sorted in increasing order.
-//
-// Use the Bubble Sort algorithm to solve this problem.
-//
-// ex. sortedArray.bubbleSort([]) -> []
-// ex. sortedArray.bubbleSort([1,2,3]) -> [1,2,3]
-// ex. sortedArray.bubbleSort([2,2,2]) -> [2,2,2]
-// ex. sortedArray.bubbleSort([3,2,1,2,4]) -> [1,2,2,3,4]
-// ex. sortedArray.bubbleSort([3, 2, 1]) -> [1, 2, 3]
-// ex. sortedArray.bubbleSort([3, 2, 2, 1]) -> [1, 2, 2, 3]
-sortedArray.bubbleSort = function(array) {
-  // YOUR CODE HERE
-}
-
-// Write a function that takes an array and returns a new array with items
-// sorted in increasing order.
-//
-// Use the merge Sort algorithm to solve this problem.
+// Expected runtime: O(n*log(n))
 //
 // ex. sortedArray.mergeSort([]) -> []
 // ex. sortedArray.mergeSort([1,2,3]) -> [1,2,3]
@@ -91,10 +53,16 @@ sortedArray.mergeSort = function(array) {
   // YOUR CODE HERE
 }
 
-// Write a function that takes an array and returns a new array with items
-// sorted in increasing order.
+/*=======*/
+/* BONUS */
+/*=======*/
+// Write a function that takes an array of numbers and MODIFIES the array
+// to be in sorted order.
 //
 // Use the Quick Sort algorithm to solve this problem.
+//
+// A correct implementation should be O(n*log(n)) and should be
+// in-place (i.e. O(1) space complexity)
 //
 // ex. sortedArray.quickSort([]) -> []
 // ex. sortedArray.quickSort([1,2,3]) -> [1,2,3]
