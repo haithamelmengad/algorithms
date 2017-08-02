@@ -1,5 +1,7 @@
 "use strict";
 
+var sortedArray = {}
+
 // Write a function that takes a sorted array of numbers and a number
 // to locate and returns the index where that number can be found
 // (or -1 if the number is not present).

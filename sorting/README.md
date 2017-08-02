@@ -54,11 +54,12 @@ Lastly, an example might be included with a problem where the example input is s
 1. [Sorting a Linked List](https://leetcode.com/problems/sort-list/description/)
     (If doing it in O(nlog(n)) time / O(1) space is too difficult, feel free to implement any solution you can.)
 
-1. Radix sort and sort by anagram: Edit `sort_bonus.js` and open `sort_bonus.html`
+1. Radix sort and sort by anagram: Edit `sort_bonus.js` and open `sort_bonus.html`.
 
     [Radix Sort info](http://www.geeksforgeeks.org/radix-sort/)
 
-1. Binary search on a sparse array: Edit `sparse_search.js` and open `sparse_search.html`
+1. Merge multiple sorted arrays: Edit `merge_any.js` and open `merge_any.html`.
 
-    Adapted from "Cracking the Coding Interview"
-1. Merge sorted arrays: edit `merge_any.js` and open `merge_any.html`
+1. Binary search on a sparse array: Edit `sparse_search.js` and open `sparse_search.html`.
+
+    This problem was adapted from "Cracking the Coding Interview".
