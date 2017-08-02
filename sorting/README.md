@@ -7,7 +7,7 @@ Concepts: **Why Sort, Binary Search, Sorting Algorithms**
 1. [Programming Problems](#programming-problems)
 1. [Bonus](#bonus)
 
-There's intentionally more here than we expect you to finish for the sake of these exercises being a good study resource to return to later.
+There's intentionally more here than we necessarily expect you to finish for the sake of these exercises being a good study resource to return to later.
 
 ## Warmup: Already Sorted Arrays
 
@@ -38,7 +38,6 @@ Lastly, an example might be included with a problem where the example input is s
 ### Interview Problems
 
 1. [Array Intersection](https://leetcode.com/problems/intersection-of-two-arrays/description/)
-1. [Array Intersection II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
 1. [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
     (There's no `String.prototype.sort`, but you can leverage `Array.prototype.sort`.)
 1. [X Papers with X+ Citations Each](https://leetcode.com/problems/h-index/description/)
@@ -50,16 +49,16 @@ Lastly, an example might be included with a problem where the example input is s
 
 ### Bonus
 
-If you've reached this point, now might be a good time to go back and implement Quick Sort in `sorted_array.js`.
+1. If you haven't yet, implement Quick Sort in `sorted_array.js`
 
 1. [Sorting a Linked List](https://leetcode.com/problems/sort-list/description/)
     (If doing it in O(nlog(n)) time / O(1) space is too difficult, feel free to implement any solution you can.)
 
 1. Radix sort and sort by anagram: Edit `sort_bonus.js` and open `sort_bonus.html`
 
-    [Radix Sort info](http://www.cs.yale.edu/homes/aspnes/pinewiki/RadixSort.html)
+    [Radix Sort info](http://www.geeksforgeeks.org/radix-sort/)
 
-1. Binary search on a sparse array: edit `sparse_search.js` and open `sparse_search.html`
+1. Binary search on a sparse array: Edit `sparse_search.js` and open `sparse_search.html`
 
     Adapted from "Cracking the Coding Interview"
 1. Merge sorted arrays: edit `merge_any.js` and open `merge_any.html`

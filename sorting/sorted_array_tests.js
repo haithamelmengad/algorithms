@@ -1,5 +1,23 @@
 "use strict";
 
+describe("sortedArray.binarySearch()", function() {
+  it("sortedArray.binarySearch([], 3) -> -1", function() {
+    expect(sortedArray.binarySearch([], 3) ).toEqual(-1);
+  });
+  it("sortedArray.binarySearch([1,2,3], 1) -> 0", function() {
+    expect(sortedArray.binarySearch([1,2,3], 1) ).toEqual(0);
+  });
+  it("sortedArray.binarySearch([1,4,5,8], 5) -> 2]", function() {
+    expect(sortedArray.binarySearch([1,4,5,8], 5) ).toEqual(2);
+  });
+  it("sortedArray.binarySearch([2,5,6,8,10,11], 11) -> 5", function() {
+    expect(sortedArray.binarySearch([2,5,6,8,10,11], 11) ).toEqual(5);
+  });
+  it("sortedArray.binarySearch([2,5,6,8,10,11], 1) -> -1", function() {
+    expect(sortedArray.binarySearch([2,5,6,8,10,11], 1) ).toEqual(-1);
+  });
+});
+
 describe("sortedArray.naiveSort()", function() {
   it("sortedArray.naiveSort([]) -> []", function() {
     expect(sortedArray.naiveSort([]) ).toEqual([]);
