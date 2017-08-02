@@ -42,8 +42,8 @@ How would you make an "autocomplete" input that can filter through given items?
 ### Implement a spreadsheet
 
 1. Display a grid of editable cells that takes up the whole page with no margins
-  - Column headers should have letters (A, B, C)
-  - Row headers should have numbers (1, 2, 3, 4)
+    - Column headers should have letters (A, B, C)
+    - Row headers should have numbers (1, 2, 3, 4)
 1. Implement insert empty row/column functionality
 2. (Bonus) Implement drag-and-drop re-ordering of rows/columns
 
@@ -63,10 +63,10 @@ How would you make a spreadsheet similar to Excel or Google Sheets?
 ### Realtime Newsfeed
 
 1. Design HTML/CSS for a Facebook like news feed
-  - with a profile picture for each item, and the name of the person who posted it
-  - A post body containing: an image or text
-  - A list of likes
-  - A like button?
+    - with a profile picture for each item, and the name of the person who posted it
+    - A post body containing: an image or text
+    - A list of likes
+    - A like button?
 1. Add ability to post post comments on feed items.
 1. Add ability to respond to comments in items. If a comment is a response to a previous comment, it should be indented. So if a comment is a response to a response to a response, it should be indented 3 levels.
 1. Add the ability to collapse comment threads i.e. hide all comments that are in response to a particular comment.
@@ -77,9 +77,9 @@ How would you make a spreadsheet similar to Excel or Google Sheets?
 Write a frontend to allow users to set and reset a timer.
 
 1. Show a countdown clock. This clock must run down in real-time.
-  - with hour, minutes and seconds
-  - a name
-  - a start, pause, and reset button
+    - with hour, minutes and seconds
+    - a name
+    - a start, pause, and reset button
 1. Allow the user to input a time for the countdown
 1. Add logic to make the start, pause and reset buttons work
 1. When a clock has finished, render a notification on the page
@@ -90,10 +90,10 @@ Write a frontend to allow users to set and reset a timer.
 ### (React) Build Tinder
 
 1. Create a card interface
-  - A profile picture
-  - Name, age, bio
-  - Like and unlike buttons
-  - the card should be centered on the screen
+    - A profile picture
+    - Name, age, bio
+    - Like and unlike buttons
+    - the card should be centered on the screen
 1. Add logic that will hide the current card and show the next card when the like or unlike button is pressed
 1. Allow these cards to be 'swiped' left or right
 1. (Bonus) Animate the swiping by making the card rotate slightly and fade away
