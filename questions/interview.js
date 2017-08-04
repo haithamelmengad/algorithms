@@ -8,7 +8,7 @@
 
 /* Question 1 */
     // What are the limitations of using typeof to check if a variable is an object (example below)
-    if(typeof myObj === "Object") {
+    if(typeof myObj === "object") {
        // treat as object 
     }
 
@@ -64,7 +64,7 @@ function foo2()
     console.log(4);
 })();
 /* Question 8 */
-    // What will happen when an user clicks Button 4 after we run the code below
+    // What will happen when Button 4 is clicked after we run the code below
     for (var i = 0; i < 5; i++) {
         var btn = document.createElement('button');
         btn.appendChild(document.createTextNode('Button ' + i));
