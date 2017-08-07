@@ -82,7 +82,7 @@ describe("Tree.prototype.getSize()", function() {
   it("empty tree -> 0", function() {
     expect(new Tree().getSize()).toBe(0);
   });
-  it("tree with 1 item -> 0", function() {
+  it("tree with 1 item -> 1", function() {
     expect(new Tree(123).getSize()).toBe(1);
   });
   it("Get size", function() {

@@ -6,10 +6,6 @@ class SearchTree extends Tree {
     // YOUR CODE HERE
   }
 
-  contains(n) {
-    // YOUR CODE HERE
-  }
-
   min(n) {
     // YOUR CODE HERE
   }

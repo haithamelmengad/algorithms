@@ -4,16 +4,16 @@
 //
 // A node is marked as a terminal if a word ends there.
 //
-// So if we insert 'HELLO' the tree will be:
+// So if we insert 'HELLO' the trie will be:
 //
-//    H -> E -> L -> L -> O
+//    H -> E -> L -> L -> *O*
 //
-// But only O will be a terminal. So until I insert
-//
-// It let's us check if we've seen a word before.
+// *O* is a terminal.
 //
 //
-// ex.
+//
+//
+// Example of how to use our Trie
 //  var t = new Trie();
 //  t.insert('hello');
 //  t.search('hello') -> true
@@ -32,8 +32,13 @@ function Trie(letter) {
   this.terminal = false;
 }
 
-// Write a function that searches tree and returns true if and only if the
-// exact given word has been inserted before.
+// Write a function that searches trie and returns true if and only if the
+// exact given word has been inserted before. Notice in the trie above
+
+// H -> E -> L -> L -> *O*
+
+// Trie.search("HELLO") is true but Trie.search("HELL") is false although
+// the letters all appear in the trie.
 Trie.prototype.search = function(word) {
   // YOUR CODE HERE
 }
