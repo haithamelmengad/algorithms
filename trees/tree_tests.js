@@ -94,7 +94,7 @@ describe("Tree.prototype.getHeight()", function() {
   it("empty tree -> 0", function() {
     expect(new Tree().height()).toBe(0);
   });
-  it("tree with 1 item -> 0", function() {
+  it("tree with 1 item -> 1", function() {
     expect(new Tree(123).height()).toBe(1);
   });
   it("Get height", function() {
