@@ -1,5 +1,17 @@
 # Tree Exercises
 
-1. Trees: Edit `tree.js` and open `tree.html`
-1. Binary search trees: Edit `searchTree.js` and open `searchTree.html`
-1. Tries: Edit `trie.js` and open `trie.html`
+## Implementation
+1. Trees: Edit `tree.js`
+    >Open `tree.html` to test
+
+2. Binary search trees: Edit `searchTree.js`
+    >Open `searchTree.html`
+
+## Practice
+1.
+2.
+3.
+
+## Bonus
+1. Tries: Edit `trie.js`
+    >Open `trie.html`
