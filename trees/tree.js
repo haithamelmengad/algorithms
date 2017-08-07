@@ -76,6 +76,8 @@ class Tree {
 
   // Return true if both trees have the same shape
   // and same items. False otherwise.
+  // Note that there won't be tests for this function in tree_tests.js. 
+  // We will need this function to test Binary Search Trees (BSTs) later.
   equals(tree) {
     // YOUR CODE HERE
   }
