@@ -1,16 +1,8 @@
 "use strict";
 
 function SearchTree(value, left, right) {
-  // Call the Tree constructor with this object here
-  // YOUR CODE HERE
+  // Calling the Tree constructor with this object here
   Tree.call(this, value, left, right);
-}
-
-// Inherit from Tree here!
-// YOUR CODE HERE
-
-SearchTree.prototype.contains = function(n) {
-  // YOUR CODE HERE
 }
 
 SearchTree.prototype.min = function(n) {
