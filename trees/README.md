@@ -1,5 +1,18 @@
 # Tree Exercises
 
-1. Trees: Edit `tree.js` and open `tree.html`
-1. Binary search trees: Edit `searchTree.js` and open `searchTree.html`
-1. Tries: Edit `trie.js` and open `trie.html`
+## Implementation
+1. Trees: Edit `tree.js`
+    >Open `tree.html` to test
+
+2. Binary search trees: Edit `searchTree.js`
+    >Open `searchTree.html`
+
+## Practice
+1. [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)
+2. [Print Binary Tree](https://leetcode.com/problems/print-binary-tree/description/)
+3. [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)
+4. [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)
+
+## Bonus
+1. Tries: Edit `trie.js`
+    >Open `trie.html`
