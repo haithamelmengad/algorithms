@@ -6,11 +6,11 @@ class SearchTree extends Tree {
     // YOUR CODE HERE
   }
 
-  min(n) {
+  min() {
     // YOUR CODE HERE
   }
 
-  max(n) {
+  max() {
     // YOUR CODE HERE
   }
 
@@ -34,6 +34,9 @@ class SearchTree extends Tree {
 
   // Remove given item from this tree.
   // Return true if item was found and removed and false if item was not found.
+  // When the node to be removed is found, replace the value at this node with the next largest (v), and
+  // recursively remove v from the right subtree.
+  // Hint: this.right.min()
   remove(n, parent) {
     // YOUR CODE HERE
   }
