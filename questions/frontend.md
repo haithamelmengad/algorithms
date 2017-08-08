@@ -7,6 +7,7 @@ Each question has multiple stages. Complete them one at a time. If you get stuck
 
 Guidelines:
 
+- Use a simple fromt-end development environment like [Codepen](http://codepen.io/) or [JSFiddle](https://jsfiddle.net/).
 - Don't worry about backend integration.
 - You are welcome to Google, but **don't copy paste code.**
 - Try to implement these solutions using pure HTML/CSS. Don't use Bootstrap (or similar library).
