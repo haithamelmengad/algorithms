@@ -1,6 +1,6 @@
 # Frontend Interview Questions
 
-Use Codepen to implement these tasks purely on the client side. Wherever necessary you can use dummy data to fill out the contents.
+Implement these tasks purely on the client side. Wherever necessary you can use dummy data to fill out the contents.
 These exercises are meant to test your ability to write HTML/CSS/JavaScript purely in the Browser. 
 
 Each question has multiple stages. Complete them one at a time. If you get stuck, you can skip to the next question.
