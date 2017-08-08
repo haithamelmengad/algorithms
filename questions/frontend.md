@@ -29,7 +29,8 @@ Guidelines:
 ### Question 3: (React) Implement a Modal Component
 
 1. Implement a React modal component.
-2. Create a button that opens the modal when clicked.
+1. Create a button that opens the modal when clicked.
+1. You can refer to the [react-modal](https://github.com/reactjs/react-modal) node module, but don't copy paste.
 
 ![https://d1ax1i5f2y3x71.cloudfront.net/items/1D411h3O0D0K3A1w2v1P/Screen%20Recording%202017-08-07%20at%2008.17%20PM.gif?X-CloudApp-Visitor-Id=e5cbc53e0183e658b7fd05a29acab6f8&v=cf34350e](https://d1ax1i5f2y3x71.cloudfront.net/items/1D411h3O0D0K3A1w2v1P/Screen%20Recording%202017-08-07%20at%2008.17%20PM.gif?X-CloudApp-Visitor-Id=e5cbc53e0183e658b7fd05a29acab6f8&v=cf34350e)
 
