@@ -1,29 +1,29 @@
 "use strict";
 
-describe("heap", function() {
-  describe("heap with no comparator function", function() {
+describe("Heap", function() {
+  describe("Heap with no comparator function", function() {
     var aHeap;
     beforeEach(function() {
-      aHeap = new heap();
+      aHeap = new Heap();
     });
 
-    describe("heap.push(), heap.pop()", function() {
-      it("heap.pop() -> undef", function() {
+    describe("Heap.push(), Heap.pop()", function() {
+      it("Heap.pop() -> undef", function() {
         expect(aHeap.pop()).toBeUndefined();
       });
 
-      it("heap.push(1); heap.pop() -> 1", function() {
+      it("Heap.push(1); Heap.pop() -> 1", function() {
         aHeap.push(1);
         expect(aHeap.pop()).toBe(1);
       });
 
-      it("heap.push(2); heap.push(1); heap.pop() -> 1", function() {
+      it("Heap.push(2); Heap.push(1); Heap.pop() -> 1", function() {
         aHeap.push(2);
         aHeap.push(1);
         expect(aHeap.pop()).toBe(1);
       });
 
-      it("heap.pop() returns items in correct order", function() {
+      it("Heap.pop() returns items in correct order", function() {
         aHeap.push(34);
         aHeap.push(92);
         aHeap.push(0);
@@ -38,45 +38,45 @@ describe("heap", function() {
       });
     });
 
-    describe("heap.size()", function() {
-      it("heap.size() -> 0", function() {
+    describe("Heap.size()", function() {
+      it("Heap.size() -> 0", function() {
         expect(aHeap.size()).toBe(0);
       });
-      it("heap.push(1); heap.size() -> 1", function() {
+      it("Heap.push(1); Heap.size() -> 1", function() {
         aHeap.push(1);
         expect(aHeap.size()).toBe(1);
       });
-      it("heap.push(1); heap.pop(); heap.size() -> 0", function() {
+      it("Heap.push(1); Heap.pop(); Heap.size() -> 0", function() {
         aHeap.push(1);
         aHeap.pop();
         expect(aHeap.size()).toBe(0);
       });
-      it("heap.push() returns correct size for a large heap", function() {
+      it("Heap.push() returns correct size for a large Heap", function() {
         for (var i = 0; i<1000; i++)
           aHeap.push(i);
         expect(aHeap.size()).toBe(1000);
       });
     });
 
-    describe("heap.peek()", function() {
-      it("heap.peek() -> undef", function() {
+    describe("Heap.peek()", function() {
+      it("Heap.peek() -> undef", function() {
         expect(aHeap.peek()).toBeUndefined();
       });
-      it("heap.push(1); heap.peek() -> 1", function() {
+      it("Heap.push(1); Heap.peek() -> 1", function() {
         aHeap.push(1);
         expect(aHeap.peek()).toBe(1);
       });
-      it("heap.push(1); heap.peek(); heap.peek() -> 1", function() {
+      it("Heap.push(1); Heap.peek(); Heap.peek() -> 1", function() {
         aHeap.push(1);
         aHeap.peek();
         expect(aHeap.peek()).toBe(1);
       });
-      it("heap.push(1); heap.pop(); heap.peek() -> undef", function() {
+      it("Heap.push(1); Heap.pop(); Heap.peek() -> undef", function() {
         aHeap.push(1);
         aHeap.pop();
         expect(aHeap.peek()).toBeUndefined();
       });
-      it("heap.peek() returns items in correct order", function() {
+      it("Heap.peek() returns items in correct order", function() {
         aHeap.push(34);
         aHeap.push(92);
         aHeap.push(0);
@@ -97,28 +97,28 @@ describe("heap", function() {
     });
   });
 
-  describe("heap with comparator function", function() {
+  describe("Heap with comparator function", function() {
     var aHeap;
     beforeEach(function () {
-      aHeap = new heap(function (a, b) { return b - a });
+      aHeap = new Heap(function (a, b) { return b - a });
     });
-    describe("heap.push(), heap.pop()", function () {
-      it("heap.pop() -> undef", function () {
+    describe("Heap.push(), Heap.pop()", function () {
+      it("Heap.pop() -> undef", function () {
         expect(aHeap.pop()).toBeUndefined();
       });
 
-      it("heap.push(1); heap.pop() -> 1", function () {
+      it("Heap.push(1); Heap.pop() -> 1", function () {
         aHeap.push(1);
         expect(aHeap.pop()).toBe(1);
       });
 
-      it("heap.push(2); heap.push(1); heap.pop() -> 1", function () {
+      it("Heap.push(2); Heap.push(1); Heap.pop() -> 1", function () {
         aHeap.push(1);
         aHeap.push(2);
         expect(aHeap.pop()).toBe(2);
       });
 
-      it("heap.pop() returns items in reverse order", function () {
+      it("Heap.pop() returns items in reverse order", function () {
         aHeap.push(34);
         aHeap.push(92);
         aHeap.push(0);
@@ -133,45 +133,45 @@ describe("heap", function() {
       });
     });
 
-    describe("heap.size()", function () {
-      it("heap.size() -> 0", function () {
+    describe("Heap.size()", function () {
+      it("Heap.size() -> 0", function () {
         expect(aHeap.size()).toBe(0);
       });
-      it("heap.push(1); heap.size() -> 1", function () {
+      it("Heap.push(1); Heap.size() -> 1", function () {
         aHeap.push(1);
         expect(aHeap.size()).toBe(1);
       });
-      it("heap.push(1); heap.pop(); heap.size() -> 0", function () {
+      it("Heap.push(1); Heap.pop(); Heap.size() -> 0", function () {
         aHeap.push(1);
         aHeap.pop();
         expect(aHeap.size()).toBe(0);
       });
-      it("heap.push() returns correct size for a large heap", function () {
+      it("Heap.push() returns correct size for a large Heap", function () {
         for (var i = 0; i < 1000; i++)
           aHeap.push(i);
         expect(aHeap.size()).toBe(1000);
       });
     });
 
-    describe("heap.peek()", function () {
-      it("heap.peek() -> undef", function () {
+    describe("Heap.peek()", function () {
+      it("Heap.peek() -> undef", function () {
         expect(aHeap.peek()).toBeUndefined();
       });
-      it("heap.push(1); heap.peek() -> 1", function () {
+      it("Heap.push(1); Heap.peek() -> 1", function () {
         aHeap.push(1);
         expect(aHeap.peek()).toBe(1);
       });
-      it("heap.push(1); heap.peek(); heap.peek() -> 1", function () {
+      it("Heap.push(1); Heap.peek(); Heap.peek() -> 1", function () {
         aHeap.push(1);
         aHeap.peek();
         expect(aHeap.peek()).toBe(1);
       });
-      it("heap.push(1); heap.pop(); heap.peek() -> undef", function () {
+      it("Heap.push(1); Heap.pop(); Heap.peek() -> undef", function () {
         aHeap.push(1);
         aHeap.pop();
         expect(aHeap.peek()).toBeUndefined();
       });
-      it("heap.peek() returns items in correct order", function () {
+      it("Heap.peek() returns items in correct order", function () {
         aHeap.push(34);
         aHeap.push(92);
         aHeap.push(0);
