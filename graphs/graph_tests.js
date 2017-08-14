@@ -233,18 +233,18 @@ describe("Graph.getDistance()", function() {
   });
 });
 
-describe("Graph.getPath()", function() {
+describe("Graph.getShortestPath()", function() {
   it("Throws an error if calcDistanceFrom() has not been called", function() {
     var g = new Graph();
     g.addEdge('a', 'b');
-    expect(function() { g.getPath('a'); }).toThrow();
+    expect(function() { g.getShortestPath('a'); }).toThrow();
   });
 
   it("Returns [] for startNode", function() {
     var g = new Graph();
     g.addEdge('a', 'b');
     g.calcDistanceFrom('a');
-    expect(g.getPath('a')).toEqual([]);
+    expect(g.getShortestPath('a')).toEqual([]);
   });
 
   it("Returns [startNode] for startNodes neighbors", function() {
@@ -256,7 +256,7 @@ describe("Graph.getPath()", function() {
     g.addEdge('a', 'f');
     g.calcDistanceFrom('a');
     g.getNeighbors('a').forEach(function(n) {
-      expect(g.getPath(n)).toEqual(['a']);
+      expect(g.getShortestPath(n)).toEqual(['a']);
     });
   });
 
@@ -264,7 +264,7 @@ describe("Graph.getPath()", function() {
     var g = new Graph();
     g.addEdge('a', 'b');
     g.calcDistanceFrom('a');
-    expect(g.getPath('x')).toBe(false);
+    expect(g.getShortestPath('x')).toBe(false);
   });
 
   it("Returns false if node has no path to startNode", function() {
@@ -272,7 +272,7 @@ describe("Graph.getPath()", function() {
     g.addEdge('a', 'b');
     g.addEdge('x', 'y');
     g.calcDistanceFrom('a');
-    expect(g.getPath('x')).toBe(false);
+    expect(g.getShortestPath('x')).toBe(false);
   });
 
   it("Test with graph with some nodes", function() {
@@ -286,13 +286,13 @@ describe("Graph.getPath()", function() {
     g.addEdge('g', 'h');
     g.addEdge('b', 'h');
     g.calcDistanceFrom('c');
-    expect(g.getPath('a')).toEqual(['c', 'b']);
-    expect(g.getPath('b')).toEqual(['c']);
-    expect(g.getPath('c')).toEqual([]);
-    expect(g.getPath('d')).toEqual(['c']);
-    expect(g.getPath('e')).toEqual(['c', 'd']);
-    expect(g.getPath('f')).toEqual(['c']);
-    expect(g.getPath('g')).toEqual(['c', 'f']);
-    expect(g.getPath('h')).toEqual(['c', 'b']);
+    expect(g.getShortestPath('a')).toEqual(['c', 'b']);
+    expect(g.getShortestPath('b')).toEqual(['c']);
+    expect(g.getShortestPath('c')).toEqual([]);
+    expect(g.getShortestPath('d')).toEqual(['c']);
+    expect(g.getShortestPath('e')).toEqual(['c', 'd']);
+    expect(g.getShortestPath('f')).toEqual(['c']);
+    expect(g.getShortestPath('g')).toEqual(['c', 'f']);
+    expect(g.getShortestPath('h')).toEqual(['c', 'b']);
   });
 });
