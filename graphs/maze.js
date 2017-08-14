@@ -106,6 +106,9 @@ Maze.prototype.tryMove = function(row, column, direction) {
 // A maze is solvable if there exists a path from the Starting Point
 // to the Ending Point.
 //
+// For this method, use the Graph that you have built earlier. You will need
+// to convert this.maze into a graph.
+//
 // No diagonal moves are allowed.
 Maze.prototype.isSolvable = function() {
   // YOUR CODE HERE
@@ -118,6 +121,9 @@ Maze.prototype.isSolvable = function() {
 //
 // There may be multiple shortest paths in a maze, you only need to find one of
 // them.
+//
+// For this method, use the Graph that you have built earlier. You will need
+// to convert this.maze into a graph.
 //
 // ex. new Maze([['S', 'X', 'E']]).getShortestPath() -> [], not solvable
 // ex. new Maze([['S', 'E']]).getShortestPath() -> ['right']
