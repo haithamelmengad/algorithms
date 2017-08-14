@@ -225,11 +225,11 @@ describe("Maze.getShortestPath()", function() {
     var actual = new Maze(path.maze).getShortestPath();
     if (_.isArray(path.solution)) {
       it("Path for: " + JSON.stringify(path.maze), function() {
-        expect(actual).toEqual(path.solution);
+        expect(actual).toEqual(path.solution.length);
       });
     } else {
       it("Path length for: " + JSON.stringify(path.maze), function() {
-        expect(actual.length).toBe(path.solution);
+        expect(actual).toBe(path.solution);
       });
     }
   });
