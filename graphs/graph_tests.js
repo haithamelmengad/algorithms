@@ -1,6 +1,4 @@
 "use strict";
-var Graph = require('./graph');
-var _ = require('underscore');
 
 describe("Graph addEdge() and isConnected()", function() {
   it("Empty graph is not connected", function() {

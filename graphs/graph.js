@@ -1,6 +1,4 @@
 "use strict";
-var _ = require('underscore');
-var Queue = require('./queue');
 
 // This object represents an undirected graph.
 //
@@ -94,5 +92,3 @@ Graph.prototype.getDistance = function(node) {
 Graph.prototype.getPath = function(node) {
   // YOUR CODE HERE
 }
-
-module.exports = Graph;

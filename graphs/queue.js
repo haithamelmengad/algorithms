@@ -164,5 +164,3 @@ Queue.prototype.forEach = function(fun) {
     next = next.next;
   }
 }
-
-module.exports = Queue;
