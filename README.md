@@ -6,6 +6,7 @@
 1. [Sorting](sorting/)
 1. [Trees](trees/)
 1. [Heaps and hash tables](heap_hash/)
+1. [Graphs](graphs/)
 1. [Advanced Graphs](advanced_graphs/)
 1. [Dynamic Programming](dp/)
 
