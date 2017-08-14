@@ -115,9 +115,8 @@ Maze.prototype.isSolvable = function() {
 }
 
 // Write a method (i.e. a function) that returns the shortest path through a
-// maze. This function should return an array of strings containing 'right',
-// 'left', 'up' or 'down'.  If there is no path through the maze it should
-// return empty array.
+// maze. This function should return the length of the shortest path. If there is 
+// no path through the maze it should return 0.
 //
 // There may be multiple shortest paths in a maze, you only need to find one of
 // them.
@@ -125,9 +124,9 @@ Maze.prototype.isSolvable = function() {
 // For this method, use the Graph that you have built earlier. You will need
 // to convert this.maze into a graph.
 //
-// ex. new Maze([['S', 'X', 'E']]).getShortestPath() -> [], not solvable
-// ex. new Maze([['S', 'E']]).getShortestPath() -> ['right']
-// ex. new Maze([['E', ' '], ['X', ' '], ['S', ' ']]).getShortestPath() -> ['right', 'up', 'up', 'left']
+// ex. new Maze([['S', 'X', 'E']]).getShortestPath() -> 0, not solvable
+// ex. new Maze([['S', 'E']]).getShortestPath() -> 1
+// ex. new Maze([['E', ' '], ['X', ' '], ['S', ' ']]).getShortestPath() -> 4
 Maze.prototype.getShortestPath = function() {
   // YOUR CODE HERE
 }
