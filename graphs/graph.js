@@ -60,14 +60,22 @@ Graph.prototype.getNeighbors = function(node) {
 //  - Create an empty queue
 //  - Push an object with start {node: startNode, distance: 0} to the queue
 //  - while queue is not empty
-//    - an item from queue
+//    - pop an object from queue and call this item
 //    - if item.node is in this.distances skip item
 //    - else
-//      - set the value of item.node in this.distances to node.distance
+//      - set the value of item.node in this.distances to item.distance
 //      - for every neighbor of item.node, push({node: neighbor, distance: item.distance + 1})
 //
-// When you exit the for loop, you will have set the distance of every node in the graph
-// in this.distances.
+// TIP: We have already imported queue.js for you in graphs.html.
+//      You can create a new Queue by doing new Queue().
+//      Available queue functions: 
+//      - getSize
+//      - push
+//      - pop
+//      - contains
+//      - peek
+//      - forEach
+//
 // Remember to set this.distanceCalculated to true at the end.
 Graph.prototype.calcDistanceFrom = function (startNode) {
   // YOUR CODE HERE
@@ -82,13 +90,14 @@ Graph.prototype.getDistance = function(node) {
   // YOUR CODE HERE
 }
 
-// Write a function that returns the path between given node and the startNode.
+// Write a function that returns the shortest path between given node and the startNode.
 // If there is no path between node and startNode (or if node is not in the graph)
 // return false.
 // Throw an exception if calcDistanceFrom() has not been called yet.
 // The path should start with the startNode and not include this node.
 // - The path from the startNode to itself is [].
 // - The path from startNode to its neighbors is [startNode].
-Graph.prototype.getPath = function(node) {
+// TIP: startNode refers to the node in which this.distances[node] is 0.
+Graph.prototype.getShortestPath = function(node) {
   // YOUR CODE HERE
 }
