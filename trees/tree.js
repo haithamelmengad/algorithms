@@ -39,7 +39,8 @@ class Tree {
 
   // Get the height of the tree.
   //
-  height(fn) {
+  // A tree with just the root node and no children has height 1.
+  height() {
     // YOUR CODE HERE
   }
 
@@ -47,7 +48,7 @@ class Tree {
   //
   // Steps for an in-order traversal:
   //  - Visit left child
-  //  - This node
+  //  - This node (Call fn with this.value)
   //  - Visit right child
   inOrder(fn) {
     // YOUR CODE HERE
@@ -56,7 +57,7 @@ class Tree {
   // Perform a pre order traversal of the tree.
   //
   // Steps for an in-order traversal:
-  //  - This node
+  //  - This node (Call fn with this.value)
   //  - Visit left child
   //  - Visit right child
   preOrder(fn) {
@@ -68,13 +69,15 @@ class Tree {
   // Steps for an in-order traversal:
   //  - Visit left child
   //  - Visit right child
-  //  - This node
+  //  - This node (Call fn with this.value)
   postOrder(fn) {
     // YOUR CODE HERE
   }
 
   // Return true if both trees have the same shape
   // and same items. False otherwise.
+  // Note that there won't be tests for this function in tree_tests.js. 
+  // We will need this function to test Binary Search Trees (BSTs) later.
   equals(tree) {
     // YOUR CODE HERE
   }

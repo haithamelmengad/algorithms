@@ -18,28 +18,28 @@
 // A comparator function takes two arguments, a and b, and returns a negative
 // number if a < b (i.e., a comes before b), zero if a is equal to b, and a
 // positive number if a > b.
-var heap = function(comparator) {
+class Heap {
+  constructor(comparator) {
+    // YOUR CODE HERE
+  }
 
-};
+  // Add a value v to the heap.
+  push(v) {
+    // YOUR CODE HERE
+  }
 
-// Add a value v to the heap.
-heap.prototype.push = function(v) {
+  // Remove the first value from the heap (i.e., the top value) and return it.
+  pop() {
+    // YOUR CODE HERE
+  }
 
-};
+  // Return the first value (i.e., the top value) without removing it.
+  peek() {
+    // YOUR CODE HERE
+  }
 
-// Remove the first value from the heap (i.e., the top value) and return it.
-heap.prototype.pop = function() {
-  return true;
-};
-
-// Return the first value (i.e., the top value) without removing it.
-heap.prototype.peek = function() {
-
-};
-
-// Return the number of elements in the heap.
-heap.prototype.size = function() {
-
-};
-
-window.heap = heap;
+  // Return the number of elements in the heap.
+  size() {
+    // YOUR CODE HERE
+  }
+}
