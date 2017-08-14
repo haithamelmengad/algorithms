@@ -117,7 +117,7 @@ describe("Graph.calcDistanceFrom()", function() {
   it("Calling calcDistanceFrom() on graph with 2 nodes works", function() {
     var g = new Graph();
     g.addEdge('a', 'b');
-    g.calcDistanceFrom('a');
+    expect(function() { g.calcDistanceFrom('a') }).not.toThrow();
   });
 
   it("Calling calcDistanceFrom() twice throws an error", function() {
@@ -209,9 +209,7 @@ describe("Graph.getDistance()", function() {
     });
     g.calcDistanceFrom("0");
     _.range(100).forEach(function(i) {
-      if (g.getDistance("" + i) !== i) {
-        throw new Error('Wrong distance');
-      }
+      expect(g.getDistance("" + i)).toBe(i);
     });
   });
 
@@ -230,9 +228,7 @@ describe("Graph.getDistance()", function() {
     g.addEdge('0', '' + last);
     g.calcDistanceFrom("0");
     _.range(100).forEach(function(i) {
-      if (g.getDistance("" + i) !== Math.min(i, 100 - i)) {
-        throw new Error('Wrong distance');
-      }
+      expect(g.getDistance("" + i)).toBe(Math.min(i, 100 - i));
     });
   });
 });
