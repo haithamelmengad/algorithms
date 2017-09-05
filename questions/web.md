@@ -2,31 +2,40 @@
 
 ## Questions
 
-## HTML/CSS/JS
-
-1. Explain the CSS “box model” and the layout components that it consists of.
-1. Explain the meaning of each of these CSS units for expressing length: cm, em, in, mm, pc, pt, px
+### HTML / HTTP / Browser / Web Development
+1. What is HTML5 and W3C?
+1. What does the `action` attribute on an HTML form do?
+1. When an HTML form is submitted via a POST method, what `Content-Type` does the form come in?
 1. What is CORS? How does it work?
 1. Explain the purpose of each of the HTTP request types/methods when used with a RESTful web service.
 1. What is the HTTP request header, and what kind of information usually goes in it?
 1. How does a `POST` request differ from a `GET` request?
-1. What does the `Content-Type` header do?
 1. What do we mean when we say HTTP is stateless?
 1. What is a `2xx` HTTP status code? `3xx`? `4xx`? `5xx`?
 1. What are cookies? What are they useful for?
 1. What's an XSS attack? How do we prevent it?
 1. What's a CSRF attack? How do we prevent it?
 1. What's a SQL injection attack? How do we prevent it?
-1. Explain the basic structure of a MIME multipart message when used to transfer different content type parts. Provide a simple example.
-1. How do we execute a series of AJAX calls in order?
-1. How do we execute a series of AJAX calls and then run something else only after all of those calls have completed?
-1. What global styles are applied as a part of Bootstrap’s default typography?
-1. What does “!important” do?
+1. What's a RESTful API?
+1. What other request methods are there?
+1. What happens when you type "http://www.google.com" in the address bar of your web browser?
+1. How does express differ from a web server (Apache, nginx)?
+1. What is DNS and how does it work?
+1. What are the differences between `application/x-www-form-urlencoded` and `multipart/form-data`?
+1. What does `<!DOCTYPE html>` do?
+1. What are some examples of meta tags and what do they do?
+
+### CSS
+1. Explain the CSS “box model” and the layout components that it consists of.
+1. Explain CSS specificity.
+1. Explain the meaning of each of these CSS units for expressing length: cm, em, in, mm, pc, pt, px
+1. What does `!important` do?
 1. How many different media queries are used by the Bootstrap grid system by default?
 1. What dependencies does Bootstrap require for it to work properly?
-1. What is HTML form submission?
-1. What does the `action` attribute on an HTML form do?
-1. When an HTML form is submitted via a POST method, what `Content-Type` does the form come in?
+1. What global styles are applied as a part of Bootstrap’s default typography?
+1. How do you import custom fonts?
+
+## Bonus
 
 ### jQuery
 
@@ -114,7 +123,6 @@ $( "html" ).append( "<button>Click Alert!</button>" );
 1. What’s the most frustrating RN bug or issue you’ve encountered?
 1. Are RN apps really native? Why or why not?
 1. What’s the difference between RN and Ionic/Cordova/PhoneGap/Apptanium/...
-
 
 ## Links and resources
 
