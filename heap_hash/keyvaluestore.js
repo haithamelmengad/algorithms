@@ -46,8 +46,8 @@ class KeyValueStore {
   }
 
   // This function is very similar to containsKey(key), but this time the other way
-  // around. It should receive a value, and search for the key that is associated with
-  // that value and return it.
+  // around. It should receive a value, and search for the value in all values
+  // return true if it is found, false otherwise.
   containsValue(value) {
     // YOUR CODE HERE
   }
