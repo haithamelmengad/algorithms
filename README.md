@@ -3,6 +3,7 @@
 ## Week 1
 
 1. [Day 1: Big O notation, Arrays, Linked Lists, and Stacks](big_o_arrays_linked_lists_stacks/)
+    - Software engineering interview process
 1. Day 2: Take Home Exercises
     - Resume Writing Workshop
     - Code Style for Take Home Exercises
