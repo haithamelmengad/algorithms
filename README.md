@@ -15,8 +15,9 @@
 1. [Day 1: Frontend Phone-interview Coding Exercises](questions/frontend.md)
 1. [Day 2: Heaps and hash tables](heap_hash/)
 1. Day 3: Take Home Exercise
-    - System Design Interview
+    - System design interview
 1. [Day 4: Graphs](graphs/)
+    - Whiteboard coding
 1. [Day 5: JavaScript Knowledge](questions/js.md)
 
 ---
