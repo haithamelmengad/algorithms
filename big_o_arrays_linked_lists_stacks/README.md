@@ -2,19 +2,9 @@
 
 Concepts: **Big O notation, Arrays, Linked Lists, and Stacks**
 
-Hello everyone! We'll split today's schedule into 3 different main sections (excluding the bonuses):
-
-1. [Warmup Quiz: Big O Notation](#warmup-quiz)
 1. [Implementing Data Structures from scratch](#implementing-data-structures)
 1. [Programming Problems (Using Arrays, Linked Lists, and Stacks)](#programming-problems)
 1. [Bonus!](#bonus-1)
-
-## Warmup Quiz
-
-> Try not to spend more than 15 minutes for this.
-
-1. Skim through [https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity](https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity)
-1. [I'm ready!](https://goo.gl/forms/KUdCZ2tYnqK1c1Yk1)
 
 ## Implementing Data Structures
 
