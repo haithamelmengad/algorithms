@@ -95,3 +95,10 @@
 - [Top 10 ES6 Features Every Busy JavaScript Developer Must Know](http://webapplog.com/es6/)
 - [25 Essential JavaScript Interview Questions](https://www.toptal.com/javascript/interview-questions)
 - [7 Essential Node.js Interview Questions](https://www.toptal.com/nodejs/interview-questions)
+
+## Student Created Resources
+
+- [jQuery Quizlet (courtesy of Otto N. S'17)](https://quizlet.com/_42u7fw)
+- [JavaScript Knowledge Quizlet (courtesy of Otto N. S'17)](https://quizlet.com/_41lrlx)
+- [General Web Dev Knowledge Quizlet (courtesy of Otto N. S'17)](https://quizlet.com/246474484/general-web-dev-knowledge-flash-cards/)
+- [Express Quizlet (courtesy of Otto N. S'17) (https://quizlet.com/246637084/expressjs-flash-cards/)
