@@ -101,4 +101,4 @@
 - [jQuery Quizlet (courtesy of Otto N. S'17)](https://quizlet.com/_42u7fw)
 - [JavaScript Knowledge Quizlet (courtesy of Otto N. S'17)](https://quizlet.com/_41lrlx)
 - [General Web Dev Knowledge Quizlet (courtesy of Otto N. S'17)](https://quizlet.com/246474484/general-web-dev-knowledge-flash-cards/)
-- [Express Quizlet (courtesy of Otto N. S'17) (https://quizlet.com/246637084/expressjs-flash-cards/)
+- [Express Quizlet (courtesy of Otto N. S'17)(https://quizlet.com/246637084/expressjs-flash-cards/)
