@@ -14,11 +14,18 @@ var sortWarmup = {};
 // ex. sortWarmup.isSorted([-12, 2, 3, 6, 10]) -> true
 // ex. sortWarmup.isSorted([-12, 3, 6, 10, 2]) -> false
 sortWarmup.isSorted = function(array) {
-  // YOUR CODE HERE
+  let isSorted = true;
+  for (let i = 0; i < array.length-1; i++) {
+    if(array[i]>array[i+1]){
+      isSorted = false;
+    }
+  }
+  return isSorted;
 }
 
 // Write a function that merges two sorted arrays and
 // returns a new sorted array.
+  
 //
 // ex. sortWarmup.mergeArrays([], []) -> []
 // ex. sortWarmup.mergeArrays([1, 2], []) -> [1, 2]
@@ -27,7 +34,41 @@ sortWarmup.isSorted = function(array) {
 // ex. sortWarmup.mergeArrays([1, 10], [2, 3, 11]) -> [1, 2, 3, 10, 11]
 // ex. sortWarmup.mergeArrays([1, 2, 9, 10, 12], [2, 3, 11]) -> [1, 2, 2, 3, 9, 10, 11, 12]
 sortWarmup.mergeArrays = function(array1, array2) {
-  // YOUR CODE HERE
+  let mergedArray = [];
+  const length = Math.max(array1.length, array2.length);
+  
+  for (let i = 0; i < length; i++) {
+    console.log(array1[i] + " < " + array2[i] + " ?");
+    if( array1[i] && array2[i]){
+      if(array1[i] < array2[i]){
+          mergedArray.push(array1[i]);
+          mergedArray.push(array2[i]);
+        } else {
+          mergedArray.push(array2[i]);
+          mergedArray.push(array1[i]);
+        }
+    
+  } else
+    
+    if (array1[i] && !array2[i]){
+        let position = mergedArray.length-1;
+        while(mergedArray[position] > array1[i] ){
+          position --;
+        }
+        mergedArray.splice(position+1, 0, array1[i]);
+    } else
+    if (!array1[i] && array2[i]){
+      let position2 = mergedArray.length-1;
+      while(mergedArray[position2] > array2[i] ){
+        position2 --;
+      }
+      mergedArray.splice(position2+1, 0, array2[i]);
+    }
+
+  }
+
+  return mergedArray;
+
 }
 
 
@@ -42,5 +83,13 @@ sortWarmup.mergeArrays = function(array1, array2) {
 // ex. sortWarmup.indexOf([0, 1, 2, 3, 4, 6, 7], 4) -> 4
 // ex. sortWarmup.indexOf([0, 1, 2, 3, 4, 6, 7], 5) -> -1
 sortWarmup.indexOf = function(sortWarmup, item) {
-  // YOUR CODE HERE
+  let datIndex = -1;
+  for (let i = 0; i < sortWarmup.length; i++) {
+    console.log(sortWarmup[i]);
+    if(sortWarmup[i] === item){
+      datIndex = i;
+    }
+  }
+  return datIndex;
+  
 }
