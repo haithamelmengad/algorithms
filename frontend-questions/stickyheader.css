@@ -4,6 +4,8 @@ display:flex;
 align-items:center;
 justify-content: center;
 height: 2em;
+position: sticky;
+top: 0;
 }
 
 .option{
@@ -13,9 +15,25 @@ border: solid white 0.5px;
 height:100%;
 justify-content:center;
 vertical-align:middle;
-line-height:2em;
+line-height:2em
+}
+
+.dropdown-content {
+    display: none;
+    color: white;
+    background-color: black;
+}
+
+p {
+    text-align:center;
+    vertical-align: middle;
+    line-height: 5px;
 
 }
+.dropdown.open .dropdown-content{
+    display: block;
+}
+
 
 body{
 padding: 40px;

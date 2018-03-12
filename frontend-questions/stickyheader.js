@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    $('#univ').on('click', (event) => alert('Alerte rouge') )
+    $('.dropdown').on('click', function (event) {
+    $(this).toggleClass('open')
+    })
 })
