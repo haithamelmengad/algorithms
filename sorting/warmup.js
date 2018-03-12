@@ -85,7 +85,6 @@ sortWarmup.mergeArrays = function(array1, array2) {
 sortWarmup.indexOf = function(sortWarmup, item) {
   let datIndex = -1;
   for (let i = 0; i < sortWarmup.length; i++) {
-    console.log(sortWarmup[i]);
     if(sortWarmup[i] === item){
       datIndex = i;
     }

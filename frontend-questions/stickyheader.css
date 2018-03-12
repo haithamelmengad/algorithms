@@ -1,0 +1,23 @@
+.navbar{ background-color: #000000;
+color: #f8f8ff;
+display:flex;
+align-items:center;
+justify-content: center;
+height: 2em;
+}
+
+.option{
+flex:2;
+text-align:center;
+border: solid white 0.5px;
+height:100%;
+justify-content:center;
+vertical-align:middle;
+line-height:2em;
+
+}
+
+body{
+padding: 40px;
+justify-content: center
+}
